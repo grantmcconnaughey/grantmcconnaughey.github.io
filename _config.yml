@@ -1,0 +1,11 @@
+# Site settings
+title: Grant McConnaughey
+email: grantmcconnaughey@gmail.com
+description: "Full-Stack Web Developer specializing in Groovy/Grails, SQL, jQuery, HTML, and CSS. Focused on the unachievable goal of learning everything there is to know."
+baseurl: ""
+url: "http://yourdomain.com"
+username: grantmcconnaughey
+
+# Build settings
+markdown: kramdown
+permalink: pretty
