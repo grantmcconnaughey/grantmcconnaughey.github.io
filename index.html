@@ -4,17 +4,15 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>Hi there.</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="introduction">
+      <p>My name is <span class="my-name">Grant McConnaughey</span>.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p>I am a web application developer from Southwest Missouri.</p>
+  </div>
+  <div class="home-image">
+      <img src="http://www.fillmurray.com/200/300">
+  </div>
 
 </div>

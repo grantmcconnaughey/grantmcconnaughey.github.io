@@ -8,7 +8,7 @@ title: Books
     <blockquote>"Never trust anyone who has not brought a book with them." - Lemony Snicket</blockquote>
 
     <h2>2014</h2>
-    <ul>
+    <ul class="book-list">
         {% for book in site.data.books2014 %}
             <li>
                 <span class="book-title">{{ book.title }}</span><span class="book-author"> by {{ book.author }}</span>
@@ -17,7 +17,7 @@ title: Books
     </ul>
 
     <h2>2013</h2>
-    <ul>
+    <ul class="book-list">
         {% for book in site.data.books2013 %}
             <li>
                 <span class="book-title">{{ book.title }}</span><span class="book-author"> by {{ book.author }}</span>
