@@ -171,8 +171,21 @@ a:visited { color: #205caa; }
 
 .my-name { font-weight: 400; }
 
-.introduction { float: left; }
-.home-image { float: right; }
+.introduction { float: left; width: 60% }
+.home-image { float: right; width: 40%; }
+
+.home-image img {
+    width: 100%;
+}
+.circular {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
 
 
 /* Post styles */
