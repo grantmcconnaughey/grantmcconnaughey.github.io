@@ -145,15 +145,6 @@ a:visited { color: #205caa; }
 
 .site-footer .icon:hover { text-decoration: none; }
 
-.copyright {
-    clear: both;
-    text-align: center;
-}
-
-.copyright p {
-    margin: 0;
-}
-
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
