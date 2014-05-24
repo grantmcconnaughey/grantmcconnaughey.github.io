@@ -448,6 +448,11 @@ textarea { resize: none; }
     padding: 8px 20px;
     margin: 0;
     font-size: 2em;
+    color: #333;
+  }
+
+  .site-nav .page-link:hover {
+    background-color: #efefef;
   }
 
   .post-header h1 { font-size: 36px; }
