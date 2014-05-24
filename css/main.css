@@ -40,7 +40,7 @@ textarea { resize: none; }
 .site-header {
     border-bottom: 1px solid #e8e8e8;
     min-height: 56px;
-    background-color: white;
+    background-color: #2a7ae2;
     font-weight: 300;
 }
 
@@ -48,13 +48,15 @@ textarea { resize: none; }
 .site-title:hover,
 .site-title:visited {
     display: block;
-    color: #333;
+    color: #fff;
     font-size: 26px;
     letter-spacing: -1px;
     float: left;
     line-height: 56px;
     position: relative;
     z-index: 1;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 .site-nav {
@@ -67,13 +69,18 @@ textarea { resize: none; }
 
 .site-nav .page-link {
     padding: 17px 14px;
-    color: #727272;
-    transition: background-color 0.2s ease;
+    font-weight: 400;
+    color: #fff;
+    -webkit-transition: background-color .2s ease;
+    -moz-transition: background-color .2s ease;
+    -ms-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
 }
 
 .site-nav .page-link:hover {
-    background-color: rgb(239, 239, 239); /* Fallback for older browsers (I'm looking at you, IE 8) */
-    background-color: rgba(239, 239, 239, 0.5);
+    background-color: #205caa; /* Fallback for older browsers (I'm looking at you, IE 8) */
+    background-color: rgba(239, 239, 239, 0.2);
     text-decoration: none;
 }
 
@@ -184,6 +191,7 @@ textarea { resize: none; }
 
 /* Post styles */
 /* ----------------------------------------------------------*/
+
 .posts { list-style-type: none; }
 
 .posts li { margin-bottom: 30px; }
@@ -300,6 +308,13 @@ textarea { resize: none; }
     color: #666;
 }
 
+/* Form styles */
+/* ----------------------------------------------------------*/
+.pure-form input[type="text"],
+.pure-form input[type="email"],
+.pure-form textarea {
+    margin-bottom: 1em;
+}
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
