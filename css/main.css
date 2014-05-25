@@ -92,7 +92,7 @@ textarea { resize: none; }
 
 .site-footer {
     border-top: 1px solid #e8e8e8;
-    padding: 30px 0;
+    padding: 30px 0 0;
 }
 
 .footer-heading {
@@ -154,6 +154,10 @@ textarea { resize: none; }
 .site-footer a:visited { color: #2a7ae2; }
 
 .site-footer .icon:hover { text-decoration: none; }
+
+.copyright-symbol {
+    font-family: sans-serif; /* Copyright symbol looks weird in Open Sans */
+}
 
 
 /* Page Content styles */
@@ -413,7 +417,8 @@ textarea { resize: none; }
   .site-nav {
     position: fixed;
     z-index: 10;
-    top: 14px; right: 8px;
+    top: 9px;
+    right: 9px;
     background-color: white;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
