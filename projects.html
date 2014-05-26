@@ -3,17 +3,66 @@ layout: page
 title: Projects
 ---
 
-<div class="home">
+<style>
+    .project {
+        clear: both;
+        margin-bottom: 1em;
+    }
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    .project-image-container {
+        float: left;
+        width: 50%;
+    }
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    .project-image-container img {
+        width: 100%;
+        box-shadow: 0 0 7px #ccc;
+        -webkit-box-shadow: 0 0 7px #ccc;
+        -moz-box-shadow: 0 0 7px #ccc;
+    }
+
+    .project-description {
+        float: right;
+        width: 45%;
+    }
+
+    .so-meta {
+        margin: 0;
+        text-align: center;
+        color: #aaa;
+        font-size: .75em;
+    }
+</style>
+
+<div>
+    <p>Projects I have worked on.</p>
+</div>
+
+<div>
+
+    <div class="project cf">
+        <h2>This Website!</h2>
+
+        <div class="project-image-container">
+            <img src="/images/website.png" />
+            <p class="so-meta">Whoa, how meta...</p>
+        </div>
+
+        <div class="project-description">
+            <p>Yep, this website uses some pretty cool web technologies like <a href="http://jekyllrb.com">Jekyll</a>, <a href="http://purecss.io">Pure CSS</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>, and <a href="https://www.google.com/fonts">Google Fonts</a>. It runs on <a href="https://pages.github.com/">Github Pages</a>.</p>
+        </div>
+    </div>
+
+    <div class="project cf">
+        <h2>Pure CSS Grails Plugin</h2>
+
+        <div class="project-image-container">
+            <img src="/images/grails-pure-css.png" />
+        </div>
+
+        <div class="project-description">
+            <p>Provides an easy way to include <a href="http://purecss.io">Pure CSS</a> in your Grails application. Pure CSS is "A set of small, responsive CSS modules that you can use in every web project."</p>
+        </div>
+    </div>
 
 </div>
