@@ -13,7 +13,9 @@ title: Projects
         <h2>This Website!</h2>
 
         <div class="project-image-container">
-            <img src="/images/website.png" />
+            <a href="{{ site.url }}">
+                <img src="{{ site.baseurl }}/images/website.png" />
+            </a>
             <p class="so-meta">Whoa, how meta...</p>
         </div>
 
@@ -26,11 +28,13 @@ title: Projects
         <h2>Pure CSS Grails Plugin</h2>
 
         <div class="project-image-container">
-            <img src="/images/grails-pure-css.png" />
+            <a href="http://grails.org/plugin/pure-css">
+                <img src="{{ site.baseurl }}/images/grails-pure-css.png" />
+            </a>
         </div>
 
         <div class="project-description">
-            <p>Provides an easy way to include <a href="http://purecss.io">Pure CSS</a> in your Grails application. Pure CSS is "A set of small, responsive CSS modules that you can use in every web project."</p>
+            <p>A Grails plugin that provides an easy way to include <a href="http://purecss.io">Pure CSS</a> in your Grails application. Pure CSS is "a set of small, responsive CSS modules that you can use in every web project."</p>
         </div>
     </div>
 
