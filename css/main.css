@@ -253,6 +253,11 @@ textarea { resize: none; }
     margin-top: 5px;
 }
 
+.subheading {
+    padding-left: 2em;
+    color: #333;
+}
+
 .post-content { margin: 0 0 30px; }
 
 .post-content > * { margin: 20px 0; }
