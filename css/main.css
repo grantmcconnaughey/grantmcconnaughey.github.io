@@ -517,4 +517,10 @@ textarea {
         width: 100%;
     }
 
+    .introduction,
+    .home-image {
+        float: none;
+        width: 100%;
+    }
+
 }
