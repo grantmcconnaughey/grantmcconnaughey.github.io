@@ -484,50 +484,15 @@ textarea {
 
     .wrap { padding: 0 12px; }
 
-    .site-nav {
-        position: fixed;
-        z-index: 10;
-        top: 9px;
-        right: 9px;
-        background-color: white;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        border: 1px solid #e8e8e8;
-    }
-
-    .site-nav .menu-icon {
-        display: block;
-        font-size: 24px;
-        color: #505050;
-        float: right;
-        width: 36px;
+    .site-title {
+        width: 100%;
         text-align: center;
-        line-height: 36px;
     }
 
-    .site-nav .menu-icon svg { width: 18px; height: 16px; }
-
-    .site-nav .trigger {
+    .site-nav {
+        float: none;
         clear: both;
-        margin-bottom: 5px;
-        display: none;
-    }
-
-    .site-nav:hover .trigger { display: block; }
-
-    .site-nav .page-link {
-        display: block;
-        text-align: right;
-        line-height: 1.25;
-        padding: 8px 20px;
-        margin: 0;
-        font-size: 2em;
-        color: #333;
-    }
-
-    .site-nav .page-link:hover {
-        background-color: #efefef;
+        text-align: center;
     }
 
     .post-header h1 { font-size: 36px; }
