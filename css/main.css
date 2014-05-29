@@ -19,7 +19,7 @@ a:visited { color: #205caa; }
 
 textarea {
     resize: none;
-    width: 20em;
+    width: 30em;
     height: 10em;
 }
 
@@ -477,6 +477,10 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+
+    textarea {
+        width: 100%;
+    }
 
     .wrap { padding: 0 12px; }
 
