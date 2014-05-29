@@ -17,7 +17,11 @@ a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #2a7ae2; text-decoration: underline; }
 a:visited { color: #205caa; }
 
-textarea { resize: none; }
+textarea {
+    resize: none;
+    width: 30em;
+    height: 10em;
+}
 
 /* Utility */
 
