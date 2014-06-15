@@ -1,7 +1,7 @@
 # Site settings
 title: Grant McConnaughey
 email: grantmcconnaughey@gmail.com
-description: "Full-Stack Web Developer specializing in Groovy, Grails, SQL, JavaScript and jQuery, HTML, and CSS. Focused on the unachievable goal of learning everything there is to know. I love making things that are beautiful, usable, and robust."
+description: "Full-Stack Web Developer specializing in Groovy, Grails, SQL, JavaScript, jQuery, HTML, and CSS. Focused on the unachievable goal of learning everything there is to know. I love making things that are beautiful, usable, and robust."
 baseurl: ""
 url: "http://grantmcconnaughey.github.io/"
 username: grantmcconnaughey
