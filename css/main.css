@@ -29,7 +29,7 @@ textarea {
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-    max-width: 800px;
+    max-width: 960px;
     padding: 0 30px;
     margin: 0 auto;
     zoom: 1;
@@ -81,7 +81,6 @@ textarea {
     display: block;
     color: #fff;
     font-size: 26px;
-    letter-spacing: -1px;
     float: left;
     line-height: 56px;
     position: relative;
@@ -240,7 +239,6 @@ textarea {
 .post-header h1 {
     font-size: 2em;
     line-height: 1;
-    font-weight: 300;
 }
 
 .post-header .meta {
@@ -284,7 +282,7 @@ textarea {
 .post-content blockquote {
     border-left: 4px solid #e8e8e8;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
     opacity: .6;
     font-style: italic;
     margin: 30px 0;
@@ -340,7 +338,6 @@ textarea {
 /* ----------------------------------------------------------*/
 .project {
     clear: both;
-    margin-bottom: 1em;
 }
 
 .project-image-container {
@@ -470,7 +467,7 @@ textarea {
         width: 100%;
     }
 
-    .wrap { padding: 0 12px; }
+    .wrap { padding: 0 1em; }
 
     .site-title {
         width: 100%;
