@@ -4,7 +4,7 @@
 html, body { height: 100%; }
 
 body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -212,6 +212,12 @@ textarea {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#weird {
+    text-align: center;
+    color: #666;
+    margin: 4px 0 0;
 }
 
 
@@ -506,6 +512,11 @@ textarea {
     .home-image {
         float: none;
         width: 100%;
+    }
+
+    .home-image {
+        box-sizing: border-box;
+        padding: 1em 1em 0;
     }
 
 }

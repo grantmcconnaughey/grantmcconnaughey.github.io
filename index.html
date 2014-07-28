@@ -14,7 +14,27 @@ layout: default
         <p>Please feel free to <a href="/downloads/Resume_Grant_McConnaughey.pdf">download my resume</a>.</p>
     </div>
     <div class="home-image">
-        <img src="/images/grant-cartoon.jpg" class="circular">
+        <img src="/images/grant-cartoon.jpg" class="circular" onclick="imageClick()">
+
+        <p id="weird"></p>
     </div>
 
+    <script type="text/javascript">
+        var clickCounter = 0;
+
+        function imageClick() {
+            clickCounter++;
+            var weird = document.getElementById('weird');
+
+            if ( clickCounter == 1 ) {
+                weird.innerText = "That's me!";
+            } else if ( clickCounter >= 10 && clickCounter < 20 ) {
+                weird.innerText = "Haha, okay... cut it out now.";
+            } else if ( clickCounter >= 20 && clickCounter < 30 ) {
+                weird.innerText = "Come on, let's not make this weird."
+            } else if ( clickCounter >= 30 ) {
+                weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCounter + " times.";
+            }
+        }
+    </script>
 </div>
