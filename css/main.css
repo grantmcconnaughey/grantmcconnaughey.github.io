@@ -129,30 +129,8 @@ textarea {
     padding: 30px 0 0;
 }
 
-.site-footer .column { float: left; margin-bottom: 15px; }
-
-.footer-col-1 {
-    width: 270px; /*fallback*/
-    width: -webkit-calc(35% - 10px);
-    width: -moz-calc(35% - 10px);
-    width: -o-calc(35% - 10px);
-    width: calc(35% - 10px);
-    margin-right: 10px
-}
-.footer-col-2 {
-    width: 175px; /*fallback*/
-    width: -webkit-calc(23.125% - 10px);
-    width: -moz-calc(23.125% - 10px);
-    width: -o-calc(23.125% - 10px);
-    width: calc(23.125% - 10px);
-    margin-right: 10px
-}
-.footer-col-3 {
-    width: 335px; /*fallback*/
-    width: -webkit-calc(41.875%);
-    width: -moz-calc(41.875%);
-    width: -o-calc(41.875%);
-    width: calc(41.875%);
+.site-footer h3 {
+    color: #444;
 }
 
 .site-footer ul {
@@ -450,27 +428,6 @@ textarea {
 /* Media queries */
 /* ----------------------------------------------------------*/
 
-@media screen and (max-width: 750px) {
-
-    .footer-col-1 { width: 50%; }
-
-    .footer-col-2 {
-        width: 45%; /*fallback*/
-        width: -webkit-calc(50% - 10px);
-        width: -moz-calc(50% - 10px);
-        width: -o-calc(50% - 10px);
-        width: calc(50% - 10px);
-        margin-right: 0;
-    }
-
-    .site-footer .column.footer-col-3 {
-        width: auto;
-        float: none;
-        clear: both;
-    }
-
-}
-
 @media screen and (max-width: 567px) {
 
     textarea {
@@ -497,12 +454,6 @@ textarea {
     .post-content blockquote { padding-left: 10px; }
     .post-content ul,
     .post-content ol { padding-left: 10px; }
-
-    .site-footer .column {
-        float: none;
-        clear: both;
-        width: auto;
-        margin: 0 0 15px; }
 
     .project-image-container {
         width: 100%;
