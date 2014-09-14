@@ -33,7 +33,11 @@ layout: default
             } else if ( clickCounter >= 20 && clickCounter < 30 ) {
                 weird.innerText = "Come on, let's not make this weird."
             } else if ( clickCounter >= 30 ) {
-                weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCounter + " times.";
+                var extraMessage = '';
+                if ( clickCounter >= 100 ) {
+                    extraMessage = ' ARE YOU KIDDING ME.';
+                }
+                weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCounter + " times." + extraMessage;
             }
         }
     </script>
