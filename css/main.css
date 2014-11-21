@@ -346,6 +346,25 @@ textarea {
     width: 45%;
 }
 
+.project-description p:first-of-type {
+    margin-top: 0;
+}
+
+.project-additional-images {
+    clear: both;
+    margin-top: 1em;
+}
+.project-additional-images a {
+    display: inline-block;
+    margin-right: 1em;
+}
+.project-additional-images img {
+    height: 6em;
+    box-shadow: 0 0 7px #ccc;
+    -webkit-box-shadow: 0 0 7px #ccc;
+    -moz-box-shadow: 0 0 7px #ccc;
+}
+
 .so-meta {
     margin: 0;
     text-align: center;
@@ -462,6 +481,10 @@ textarea {
 
     .project-description {
         width: 100%;
+    }
+
+    .project-description p:first-of-type {
+        margin-top: 1em;
     }
 
     .introduction,
