@@ -1,0 +1,39 @@
+---
+layout: page_bootstrap
+title: Contact
+---
+
+<p class="subheading">I look forward to hearing from you!</p>
+
+<div id="container">
+
+    <form class="form-horizontal" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" action="/send_contact.php">
+        <div class="form-group">
+            <label id="name_label" class="col-sm-2 control-label" for="name">Name</label>
+            <div class="col-sm-6 col-md-4">
+                <input id="name" class="form-control" name="name" type="text" value="" maxlength="255" tabindex="1" onkeyup="" required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label id="contact_email_label" class="col-sm-2 control-label" for="contact_email">Email</label>
+            <div class="col-sm-6 col-md-4">
+                <input id="contact_email" class="form-control" name="contact_email" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label id="detail_label" class="col-sm-2 control-label" for="detail">Message</label>
+            <div class="col-sm-6 col-md-4">
+                <textarea id="detail" class="form-control" name="detail" spellcheck="true" tabindex="3" onkeyup="" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6 col-md-4">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</div>
