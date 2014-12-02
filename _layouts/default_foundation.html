@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head_bootstrap.html %}
+{% include head_foundation.html %}
 <body>
 
-    {% include header_bootstrap.html %}
+    {% include header_foundation.html %}
 
     <div class="page-content">
-        <div class="container">
-            {{ content }}
+        <div class="row">
+            <div class="columns">
+                {{ content }}
+            </div>
         </div>
     </div>
 
-    {% include footer_bootstrap.html %}
+    {% include footer_foundation.html %}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/foundation/js/foundation.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
     <script>
         $(document).ready(function() {
+            $(document).foundation();
             FastClick.attach(document.body);
         });
     </script>

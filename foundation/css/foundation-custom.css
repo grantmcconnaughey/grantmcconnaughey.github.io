@@ -1,15 +1,39 @@
-.navbar {
-    border-radius: 0 !important;
+.top-bar-wrapper,
+.top-bar {
+    background-color: #008cba;
+    border-color: #007095;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background-color: #008cba;
+    border-color: #007095;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: #007095;
+}
+
+.top-bar.expanded .title-area {
+    background: #007095;
+}
+
+.top-bar.expanded .toggle-topbar a {
+    color: #fff;
 }
 
 .introduction {
     font-size: 1.1em;
 }
 
+.home-image {
+    margin-top: 1em;
+}
+
 .home-image img {
     box-shadow: 0 0 8px rgba(0, 0, 0, .3);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    border-radius: 50%;
 }
 
 ul.book-list {
@@ -23,6 +47,10 @@ ul.book-list {
 
 .book-list .book-author {
     color: #888;
+}
+
+.project {
+    margin-top: 1.5em;
 }
 
 .project-image-container img {
@@ -45,27 +73,60 @@ ul.book-list {
     -moz-box-shadow: 0 0 7px #ccc;
 }
 
-footer {
+.site-footer {
     border-top: 1px solid #efefef;
     padding-top: 1em;
     margin-top: 1em;
 }
 
-footer ul {
+.site-footer ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-footer li {
+.site-footer li {
     margin-top: .25em;
     margin-bottom: .25em;
 }
 
-footer .icon {
+.site-footer .icon {
     display: inline-block;
     text-align: right;
     width: 1em;
     margin-right: .8em;
+}
+
+p a,
+.site-footer a         { text-decoration: none; }
+
+p a:hover,
+.site-footer a:hover   { text-decoration: underline; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
 /* Media queries */
