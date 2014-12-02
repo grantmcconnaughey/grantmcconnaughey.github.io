@@ -151,15 +151,16 @@ textarea {
     vertical-align: middle;
 }
 
-.site-footer li .fa {
-    margin-right: 5px;
-}
-
 .site-footer a         { color: #2a7ae2; text-decoration: none; }
 .site-footer a:hover   { color: #2a7ae2; text-decoration: underline; }
 .site-footer a:visited { color: #2a7ae2; }
 
-.site-footer .icon { margin-right: 7px; }
+.site-footer .icon {
+    display: inline-block;
+    text-align: right;
+    width: 1em;
+    margin-right: .8em;
+}
 .site-footer .icon:hover { text-decoration: none; }
 
 .copyright-symbol {

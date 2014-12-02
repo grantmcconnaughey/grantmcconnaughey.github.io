@@ -1,22 +1,24 @@
 ---
-layout: default
+layout: default_bootstrap
 ---
 
 <div class="home">
 
-    <div class="introduction">
-        <h1>Hello.</h1>
+    <div class="row">
+        <div class="introduction col-xs-12 col-sm-6 col-md-8">
+            <h1>Hello.</h1>
 
-        <p>My name is <span class="my-name">Grant McConnaughey</span>.</p>
+            <p>My name is <span class="my-name">Grant McConnaughey</span>.</p>
 
-        <p>I am a web application developer from Southwest Missouri.</p>
+            <p>I am a web application developer from Southwest Missouri.</p>
 
-        <p>Please feel free to <a href="/downloads/Resume_Grant_McConnaughey.pdf">download my resume</a>.</p>
-    </div>
-    <div class="home-image">
-        <img src="/images/grant-cartoon.jpg" class="circular" onclick="imageClick()" alt="Grant cartoon">
+            <p>Please feel free to <a href="/downloads/Resume_Grant_McConnaughey.pdf">download my resume</a>.</p>
+        </div>
+        <div class="home-image col-xs-12 col-sm-6 col-md-4">
+            <img src="/images/grant-cartoon.jpg" class="img-circle img-responsive" onclick="imageClick()" alt="Grant cartoon">
 
-        <p id="weird"></p>
+            <p id="weird"></p>
+        </div>
     </div>
 
     <script>
