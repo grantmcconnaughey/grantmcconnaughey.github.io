@@ -491,6 +491,11 @@ ul.project-links {
     .post-content ul,
     .post-content ol { padding-left: 10px; }
 
+    ul.book-list {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     .project-image-container {
         width: 100%;
     }
