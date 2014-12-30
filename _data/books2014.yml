@@ -1,3 +1,15 @@
+-   title: "Two Scoops of Django: Best Practices for Django 1.6"
+    author: Daniel Greenfeld and Audrey Roy
+
+-   title: Harry Potter and the Chamber of Secrets
+    author: J.K. Rowling
+
+-   title: "Illustrated C# 2012"
+    author: Daniel Solis
+
+-   title: Harry Poter and the Sorceror's Stone
+    author: J.K. Rowling
+
 -   title: The Quick Python Book
     author: Naomi R. Ceder
 
@@ -38,7 +50,7 @@
     author: Andy Hunt
 
 -   title: Groovy in Action, Second Edition
-    author: Dierk König, Guillaume Laforge, Paul King, Cédric Champeau, Hamlet D'Arcy, Erik Pragt, and Jon Skeet
+    author: Dierk König, et al.
 
 -   title: Introducing Regular Expressions
     author: Michael James Fitzgerald
