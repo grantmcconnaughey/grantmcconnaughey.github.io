@@ -45,6 +45,19 @@ ul.book-list {
     -moz-box-shadow: 0 0 7px #ccc;
 }
 
+ul.project-links {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.project-links .icon {
+    display: inline-block;
+    text-align: right;
+    width: 1em;
+    margin-right: .5em;
+}
+
 footer {
     border-top: 1px solid #efefef;
     padding-top: 1em;

@@ -1,0 +1,52 @@
+-   header: MSSU Website
+    headerlink: http://mssu.edu/
+    description: In 2014 I created a brand new website for Missouri Southern State University. This website uses Pure CSS for its grid layout, jQuery for the home page carousel (and more), and PHP for displaying MSSU tweets and news articles from the <a href="http://accents.mssu.edu">Accents newsletter</a>. The website consists of <a href="http://mssu.edu/">one home page</a> and <a href="http://mssu.grantdev.com/temp-2.php">five templates</a> for all of the interior pages. The website is optimized for all devices from mobile to desktop.
+    mainimage: /images/projects/mssu-home-desktop.png
+    mainimagesmall: /images/projects/mssu-home-desktop-small.png
+    mainimagealt: The MSSU Home Page (Desktop)
+    additionalimages:
+        -   thumbnail: /images/projects/mssu-art-desktop-thumb.png
+            full: /images/projects/mssu-art-desktop.png
+            alt: The MSSU Art Department Page (Desktop)
+        -   thumbnail: /images/projects/mssu-home-mobile-thumb.png
+            full: /images/projects/mssu-home-mobile.png
+            alt: The MSSU Home Page (Mobile)
+        -   thumbnail: /images/projects/mssu-art-mobile-thumb.png"
+            full: /images/projects/mssu-art-mobile.png
+            alt: The MSSU Art Department Page (Mobile)
+        -   thumbnail: /images/projects/mssu-home-tablet-thumb.png
+            full: /images/projects/mssu-home-tablet.png
+            alt: The MSSU Home Page (Tablet)
+        -   thumbnail: /images/projects/mssu-home-dialog-tablet-thumb.png
+            full: /images/projects/mssu-home-dialog-tablet.png
+            alt: The MSSU Home Page Welcome Dialog (Tablet)
+        -   thumbnail: /images/projects/mssu-art-tablet-thumb.png
+            full: /images/projects/mssu-art-tablet.png
+            alt: The MSSU Art Department Page (Tablet)
+-   header: MSSU Online Admissions Application
+    headerlink: https://sungard05.mssu.edu:8443/apply/
+    description: In 2014 I created the <a href="https://sungard05.mssu.edu:8443/apply/">MSSU Online Admissions Application</a>. This application is used by every student that applies online to MSSU. It was written using Grails 2.3.
+    mainimage: /images/projects/admissions-college.png
+    mainimagesmall: /images/projects/admissions-college-small.png
+    mainimagealt: Prior Colleges page
+    additionalimages:
+        -   thumbnail: /images/projects/admissions-name-thumb.png
+            full: /images/projects/admissions-name.png
+            alt: Name page
+        -   thumbnail: /images/projects/admissions-hs-thumb.png
+            full: /images/projects/admissions-hs.png
+            alt: High School page
+-   header: Grails Cache Manager Plugin
+    headerlink: http://grails.org/plugin/cache-manager
+    description: A Grails plugin that provides a simple admin interface to manage the various caches in a Grails app.
+    mainimage: /images/projects/cache-manager.png
+    mainimagesmall: /images/projects/cache-manager-small.png
+    mainimagealt: Grails Cache Manager Plugin
+    github: https://github.com/grantmcconnaughey/grails-cache-manager
+-   header: Pure CSS Grails Plugin
+    headerlink: http://grails.org/plugin/pure-css
+    description: A Grails plugin that provides an easy way to include <a href="http://purecss.io">Pure CSS</a> in your Grails application. Pure CSS is "a set of small, responsive CSS modules that you can use in every web project."
+    mainimage: /images/projects/grails-pure-css.png
+    mainimagesmall: /images/projects/grails-pure-css-small.png
+    mainimagealt: Grails Pure CSS Plugin
+    github: https://github.com/grantmcconnaughey/pure-css-grails
