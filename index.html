@@ -5,7 +5,7 @@ layout: default
 <div class="home">
 
     <div class="introduction">
-        <h1>Hello there.</h1>
+        <h1>Hello.</h1>
 
         <p>My name is <span class="my-name">Grant McConnaughey</span>.</p>
 
@@ -20,24 +20,24 @@ layout: default
     </div>
 
     <script>
-        var clickCounter = 0;
+        var clickCount = 0;
 
         function imageClick() {
-            clickCounter++;
+            clickCount++;
             var weird = document.getElementById('weird');
 
-            if ( clickCounter == 1 ) {
+            if ( clickCount == 1 ) {
                 weird.innerText = "That's me!";
-            } else if ( clickCounter >= 10 && clickCounter < 20 ) {
+            } else if ( clickCount >= 10 && clickCount < 20 ) {
                 weird.innerText = "Haha, okay... cut it out now.";
-            } else if ( clickCounter >= 20 && clickCounter < 30 ) {
+            } else if ( clickCount >= 20 && clickCount < 30 ) {
                 weird.innerText = "Come on, let's not make this weird."
-            } else if ( clickCounter >= 30 ) {
+            } else if ( clickCount >= 30 ) {
                 var extraMessage = '';
-                if ( clickCounter >= 100 ) {
+                if ( clickCount >= 100 ) {
                     extraMessage = ' ARE YOU KIDDING ME.';
                 }
-                weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCounter + " times." + extraMessage;
+                weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCount + " times." + extraMessage;
             }
         }
     </script>
