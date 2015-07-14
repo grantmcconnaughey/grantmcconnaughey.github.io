@@ -5,7 +5,8 @@ description: "Full-Stack Web Developer specializing in Python, Django, Groovy, G
 baseurl: ""
 url: "http://grantdev.com/"
 username: grantmcconnaughey
+timezone: America/Chicago
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/
