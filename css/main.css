@@ -8,6 +8,7 @@ body {
     line-height: 1.5;
     font-weight: 400;
     background-color: #fdfdfd;
+    color: #333;
 }
 
 html, button, input, select, textarea,
@@ -283,6 +284,10 @@ textarea {
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content img {
+    max-width: 100%;
+}
+
 .post pre,
 .post code {
     border: 1px solid #d5d5e9;
@@ -312,6 +317,11 @@ textarea {
 }
 
 .post pre.terminal code { background-color: #333; }
+
+.blog-meta {
+    color: #999;
+    font-size: .8em;
+}
 
 /* Books styles */
 /* ----------------------------------------------------------*/
