@@ -3,6 +3,7 @@ layout: post
 title:  "Django Birthday"
 date:   2015-07-13 21:50:00
 categories: django
+comments: true
 ---
 It's time that I finally start a blog. I've put it off for far too long. And after spending a weekend with some of the more important folks in the Django world, I suppose you could say I've found a bit of inspiration. Here goes nothing.
 

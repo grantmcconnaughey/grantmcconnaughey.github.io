@@ -299,6 +299,13 @@ textarea {
     font-size: 15px;
 }
 
+.post .highlight pre,
+.post .highlight code {
+    white-space: pre;
+    overflow: auto;
+    word-wrap: normal;
+}
+
 .post code { padding: 1px 5px; }
 
 .post ul,
@@ -432,6 +439,7 @@ ul.project-links {
 .highlight .gt { color: #aa0000 } /* Generic.Traceback */
 .highlight .kc { font-weight: bold } /* Keyword.Constant */
 .highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { font-weight: bold } /* Keyword.Declaration */
 .highlight .kp { font-weight: bold } /* Keyword.Pseudo */
 .highlight .kr { font-weight: bold } /* Keyword.Reserved */
 .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
@@ -529,4 +537,10 @@ ul.project-links {
         padding: 1em 1em 0;
     }
 
+}
+
+@media only screen and (min-width: 768px) {
+    .post {
+        padding: 0 16.5%;
+    }
 }
