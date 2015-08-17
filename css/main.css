@@ -313,6 +313,10 @@ textarea {
 
 .post pre code { border: none; }
 
+.post .post-image-small {
+    max-width: 50%;
+}
+
 /* terminal */
 .post pre.terminal {
     border: 1px solid #000;
@@ -508,6 +512,10 @@ ul.project-links {
     .post-content blockquote { padding-left: 10px; }
     .post-content ul,
     .post-content ol { padding-left: 10px; }
+
+    .post .post-image-small {
+        max-width: 100%;
+    }
 
     ul.book-list {
         margin: 0 !important;

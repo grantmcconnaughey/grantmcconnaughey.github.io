@@ -8,7 +8,7 @@ comments: true
 I work on a web application called [SideKick](https://sidekick.sidecarsinc.com). SideKick has several dashboards depending on the type of person logged in. The "type of person" could be an employee of SideCars (the company where I work), the owner of a car dealership, or a dealer's agent. Each dashboard has lots of handy widgets, as dashboards are wont to do. We contain the logic of each widget in a Django template tag so they can easily be resused. Here's an example of a widget:
 
 <div style="text-align: center;">
-    <img src="/images/django-lazy-tags/widget.png" alt="A SideKick dashboard widget" style="max-width: 50%;" />
+    <img src="/images/django-lazy-tags/widget.png" alt="A SideKick dashboard widget" class="post-image-small" />
 </div>
 
 Imagine that on the back-end this widget calls some third party quote of the day API. You wouldn't want to slow down your page response just so you can send a request to the quotes API, receive the JSON response, parse it, and render the template tag. If the API is receiving an unusually large amount of requests then it will be very slow to respond to yours. If the API is having network issues then it will, again, be *slow*. Not cool.
