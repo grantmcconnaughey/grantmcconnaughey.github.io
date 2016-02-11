@@ -5,11 +5,25 @@ title: Projects
 
 <p class="subheading">Projects I have worked on.</p>
 
+<h2>Open Source Projects</h2>
+
 <div>
+
+    <ul>
+        <li><a href="http://github.com/grantmcconnaughey/django-avatar">django-avatar</a> — A Django app for handling user avatars.</li>
+        <li><a href="http://github.com/grantmcconnaughey/django-chartit2">django-chartit2</a> — A Django app to plot charts and pivot charts directly from the models.</li>
+        <li><a href="http://github.com/grantmcconnaughey/django-lazy-tags">django-lazy-tags</a> — A Django app for easily loading template tags via AJAX.</li>
+    </ul>
+
+</div>
+
+<h2 style="margin-bottom: 0;">Commercial Projects</h2>
+
+<div style="margin-top: 0;">
 
     {% for project in site.data.projects %}
         <div class="project cf">
-            <h2><a href="{{ project.headerlink }}">{{ project.header }}</a></h2>
+            <h3><a href="{{ project.headerlink }}">{{ project.header }}</a></h3>
 
             <div class="cf">
                 <div class="project-image-container">

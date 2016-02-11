@@ -36,10 +36,3 @@
         -   thumbnail: /images/projects/admissions-hs-thumb.png
             full: /images/projects/admissions-hs.png
             alt: High School page
--   header: Grails Cache Manager Plugin
-    headerlink: http://grails.org/plugin/cache-manager
-    description: A Grails plugin that provides a simple admin interface to manage the various caches in a Grails app.
-    mainimage: /images/projects/cache-manager.png
-    mainimagesmall: /images/projects/cache-manager-small.png
-    mainimagealt: Grails Cache Manager Plugin
-    github: https://github.com/grantmcconnaughey/grails-cache-manager
