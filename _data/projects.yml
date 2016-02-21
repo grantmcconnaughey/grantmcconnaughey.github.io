@@ -1,6 +1,6 @@
 -   header: MSSU Website
     headerlink: http://mssu.edu/
-    description: In 2014 I created a brand new website for Missouri Southern State University. This website uses Pure CSS for its grid layout, jQuery for the home page carousel (and more), and PHP for displaying MSSU tweets and news articles from the <a href="http://accents.mssu.edu">Accents newsletter</a>. The website consists of <a href="http://mssu.edu/">one home page</a> and <a href="http://mssu.grantdev.com/temp-2.php">five templates</a> for all of the interior pages. The website is optimized for all devices from mobile to desktop.
+    description: In 2014 I created a brand new website for Missouri Southern State University. This website uses Pure CSS for its grid layout, jQuery for the home page carousel (and more), and PHP for displaying MSSU tweets and news articles from the <a href="http://accents.mssu.edu">Accents newsletter</a>. The website consists of <a href="http://mssu.edu/">one home page</a> and <a href="http://www.mssu.edu/advancement/admissions/">five templates</a> for all of the interior pages. The website is optimized for all devices from mobile to desktop.
     mainimage: /images/projects/mssu-home-desktop.png
     mainimagesmall: /images/projects/mssu-home-desktop-small.png
     mainimagealt: The MSSU Home Page (Desktop)
