@@ -14,31 +14,36 @@ layout: default
         <p>Please feel free to <a href="/downloads/Resume_Grant_McConnaughey.pdf">download my resume</a>.</p>
     </div>
     <div class="home-image">
-        <img src="/images/grant-cartoon.jpg" class="circular" onclick="imageClick()" alt="Grant cartoon">
+        <img src="/images/grant-cartoon.jpg" id="homeImage" class="circular" alt="Grant cartoon">
 
         <p id="weird"></p>
     </div>
 
     <script>
-        var clickCount = 0;
-
-        function imageClick() {
-            clickCount++;
+        (function() {
+            var clickCount = 0;
             var weird = document.getElementById('weird');
 
-            if ( clickCount == 1 ) {
-                weird.innerText = "That's me!";
-            } else if ( clickCount >= 10 && clickCount < 20 ) {
-                weird.innerText = "Haha, okay... cut it out now.";
-            } else if ( clickCount >= 20 && clickCount < 30 ) {
-                weird.innerText = "Come on, let's not make this weird."
-            } else if ( clickCount >= 30 ) {
-                var extraMessage = '';
-                if ( clickCount >= 100 ) {
-                    extraMessage = ' ARE YOU KIDDING ME.';
+            function imageClick() {
+                clickCount++;
+
+                if ( clickCount == 1 ) {
+                    weird.innerText = "That's me!";
+                } else if ( clickCount >= 10 && clickCount < 20 ) {
+                    weird.innerText = "Haha, okay... cut it out now.";
+                } else if ( clickCount >= 20 && clickCount < 30 ) {
+                    weird.innerText = "Come on, let's not make this weird."
+                } else if ( clickCount >= 30 ) {
+                    var extraMessage = '';
+                    if ( clickCount >= 100 ) {
+                        extraMessage = ' ARE YOU KIDDING ME.';
+                    }
+                    weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCount + " times." + extraMessage;
                 }
-                weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCount + " times." + extraMessage;
             }
-        }
+
+            var homeImage = document.getElementById('homeImage');
+            homeImage.addEventListener('click', imageClick);
+        }());
     </script>
 </div>
