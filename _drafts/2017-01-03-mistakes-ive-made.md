@@ -94,7 +94,7 @@ Much better! A build is no longer running CLI tools on the command line and no l
 
 ## Mistake #2: Using magic strings
 
-Currently, Lintly only works with GitHub. In a future release I plan to make Lintly work with other services like GitLab and BitBucket. That's why URLs are in the form of `/gh/dashboard/` or `/gh/new/`. The `gh` portion stands for GitHub. When you go to a page in Lintly, you go there in the context of an external Git service. That way the backend code knows which API tokens to use, which repos to show you, and which organizations to show you.
+Currently, Lintly only works with GitHub. In a future release, I plan to make Lintly work with other services like GitLab and BitBucket. That's why URLs are in the form of `/gh/dashboard/` or `/gh/new/`. The `gh` portion stands for GitHub. When you go to a page in Lintly, you go there in the context of an external Git service. That way the backend code knows which API tokens to use, which repos to show you, and which organizations to show you.
 
 This is what the URL looks like:
 
@@ -112,7 +112,7 @@ def dashboard(request, service):
     return render(request, 'project/dashboard.html', {'projects': projects})
 ```
 
-That looks okay. The URL ensures that the `service` variable will only ever be `gh` or `dummy` (more on `dummy` later). In the future I can add `gl` and `bb` so that URLs and views work with GitLab and BitBucket respectively.
+That looks okay. The URL ensures that the `service` variable will only ever be `gh` or `dummy` (more on `dummy` later). In the future, I can add `gl` and `bb` so that URLs and views work with GitLab and BitBucket respectively.
 
 The problem was in my templates. My templates would hard-code the `gh` variable all over the place. For example, here's what a button would look like:
 
@@ -163,7 +163,7 @@ def get_projects(self):
     return Project.objects.filter(owner__login__in=owner_logins)
 ```
 
-Notice that this creates a `Github` client object directly (the `Github` client comes from the great [PyGithub library](https://github.com/PyGithub/PyGithub)). Unfortunately, the `get_projects` method was called from the project sidebar (the sidebar on the left hand side of each and every page while logged into Lintly). This meant I had to mock the `get_projects` method on every single view test...quite the nightmare!
+Notice that this creates a `Github` client object directly (the `Github` client comes from the great [PyGithub library](https://github.com/PyGithub/PyGithub)). Unfortunately, the `get_projects` method was called from the project sidebar (the sidebar on the left-hand side of each and every page while logged into Lintly). This meant I had to mock the `get_projects` method on every single view test...quite the nightmare!
 
 ### How I fixed the mistake
 
@@ -203,7 +203,7 @@ For Lintly, I have a Trello board with 4 columns:
 
 My workflow was simple: pull cards from the **Beta** lane and move them into the **Doing** lane. When I finished the feature, I would commit the code and move the card from **Doing** to **Done**. When all items in **Beta** were finished, then the **Beta** was ready to release.
 
-This sounds simple enough, right? The problem is with how easy it is to move items from **v1.0** to **Beta**. I would often see a little feature in the **v1.0** lane and convince myself that I could easily throw that into the **Beta** as well. This may not seem like a big deal, but doing that over and over again ensured that I would miss my own personal deadlines to have the Lintly **beta** released.
+This sounds simple enough, right? The problem is how easy it is to move items from **v1.0** to **Beta**. I would often see a little feature in the **v1.0** lane and convince myself that I could easily throw that into the **Beta** as well. This may not seem like a big deal, but doing that over and over again ensured that I would miss my own personal deadlines to have the Lintly **beta** released.
 
 ### How I fixed my mistake
 
@@ -215,7 +215,7 @@ Stay focused when you are working on a beta. Figure out which features are an ab
 
 Unless you are creating an app that is based on an entirely original idea, you'll probably find yourself making this same mistake. The mistake is comparing your app (and perhaps even yourself) to others.
 
-I thought of the idea for Lintly in June while I was driving my wife and I home from our honeymoon. I broke international car-napping laws and woke my wife up to have her type a note in my phone. The note was four words: Flake8 As A Service.
+I thought of the idea for Lintly in June while I was driving my wife and I home from our honeymoon. I broke international car-napping laws and woke my wife up to have her type a note on my phone. The note was four words: Flake8 As A Service.
 
 At the time this seemed wholly original. I couldn't believe that no one else had thought of this! We have sites like [CodeCov](https://codecov.io) that continuously check your code's test coverage, so why not have the same for linting. I had to make this quickly.
 
@@ -223,7 +223,7 @@ As I started working on Lintly over the next month or two I realized that I was 
 
 ### How I fixed the mistake
 
-Finally something clicked, and that something is what helped me push through and finally release Lintly. That was the realization of two things:
+Finally, something clicked, and that something is what helped me push through and finally release Lintly. That was the realization of two things:
 
 1. Competition is a good thing
 2. [Everyone needs a side project](https://simpleprogrammer.com/2016/11/23/side-projects/)
