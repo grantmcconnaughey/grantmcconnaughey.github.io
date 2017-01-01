@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Mistakes I made writing a Django app (and how I fixed them)"
+title:  "Mistakes I Made Writing a Django App (and How I Fixed Them)"
 date:   2017-01-05 10:00:00
 categories: django
 comments: true
 ---
 
-I [recently announced](http://blog.lintly.com/2017/01/04/announcing-lintly/) the release of a project I've been working on for a few months. The project is called [Lintly](https://lintly.com). It is a continuous Python code quality checking tool that uses [flake8](https://pypi.python.org/pypi/flake8) to lint your code when you push to GitHub. I won't go into detail about what Lintly is here -- you can read about that in the other blog post or go to [lintly.com](https://lintly.com). Instead, I'd like to discuss the process of creating a production Django app, as well as some of the mistakes that I made writing it.
+I [recently announced](http://blog.lintly.com/2017/01/04/announcing-lintly/) the release of a project I've been working on for a few months. The project is called [Lintly](https://lintly.com). It is a continuous Python code quality checking tool that uses [flake8](https://pypi.python.org/pypi/flake8) to lint your code when you push to GitHub. I won't go into detail about what Lintly is here -- you can read about that in the other blog post or go to [lintly.com](https://lintly.com). Instead, I'd like to discuss my experience creating my first proper side project, as well as some of the mistakes that I made writing it.
 
 *Technical Note:* Lintly is a Django 1.9 application that runs on Python 2.7.
 
@@ -18,11 +18,11 @@ I [recently announced](http://blog.lintly.com/2017/01/04/announcing-lintly/) the
 * [Mistake #4: Constantly moving features into the beta](#mistake-4-constantly-moving-features-into-the-beta)
 * [Mistake #5: Comparing my app to others](#mistake-5-comparing-my-app-to-others)
 
-## Mistake #1: Being lazy/writing spaghetti code
+## Mistake #1: Being lazy/Writing spaghetti code
 
 My, how code can become a big bowl of spaghetti very quickly. And don't get me wrong, I love a good bowl of spaghetti. But when it comes to code, I'm not a fan.
 
-This mistake was mostly made out of laziness. I wrote functions that were too large, did too much, and knew about too much (this trap is very easy to get into when you dive in coding without much planning). Let me give you an example.
+This mistake was mostly made out of laziness. I wrote functions that were too large, did too much, and knew about things they had no business knowing about. It turns out this trap is very easy to get into when you dive in coding without much planning. Let me give you an example.
 
 The two methods below are a part of the `Build` class. A build occurs when Lintly pulls down code from GitHub, lints it, stores the results, and sends out notifications. Here's how a `Build` linted a repo originally:
 
@@ -203,7 +203,7 @@ For Lintly, I have a Trello board with 4 columns:
 
 My workflow was simple: pull cards from the **Beta** lane and move them into the **Doing** lane. When I finished the feature, I would commit the code and move the card from **Doing** to **Done**. When all items in **Beta** were finished, then the **Beta** was ready to release.
 
-This sounds simple enough, right? The problem is how easy it is to move items from **v1.0** to **Beta**. I would often see a little feature in the **v1.0** lane and convince myself that I could easily throw that into the **Beta** as well. This may not seem like a big deal, but doing that over and over again ensured that I would miss my own personal deadlines to have the Lintly **beta** released.
+This sounds simple enough, right? The problem is how easy it is to move items from **v1.0** to **Beta**. I would sometimes see a feature in the **v1.0** lane and convince myself that I could easily throw that into the **Beta** as well. This may not seem like a big deal, but doing that over and over again ensured that I would miss my own personal deadlines to have the Lintly **beta** released.
 
 ### How I fixed my mistake
 
@@ -219,7 +219,7 @@ I thought of the idea for Lintly in June while I was driving my wife and I home 
 
 At the time this seemed wholly original. I couldn't believe that no one else had thought of this! We have sites like [CodeCov](https://codecov.io) that continuously check your code's test coverage, so why not have the same for linting. I had to make this quickly.
 
-As I started working on Lintly over the next month or two I realized that I was less original than I thought. There were other sites like Landscape, which lints Python, or HoundCI, which comments on GitHub PRs. This realization was incredibly disappointing because I thought those sites looked great and that I could never make anything as good as them. I stop working on Lintly for at a time due to discouragement.
+As I started working on Lintly over the next month or two I realized that I was less original than I thought. There were other sites like Landscape, which lints Python, or HoundCI, which comments on GitHub PRs. This realization was certainly disappointing. Those apps are great and I feared I could never make anything as good as them. I stop working on Lintly for at a time due to discouragement.
 
 ### How I fixed the mistake
 
