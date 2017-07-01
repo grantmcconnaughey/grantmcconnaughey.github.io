@@ -373,10 +373,6 @@ textarea {
     color: #363636;
     margin-right: 80px;
 }
-.message.to + .message.to,
-.message.from + .message.from {
-    margin-top: -7px;
-}
 .message:before {
     border-color: #2095FE;
     border-radius: 50% 50% 50% 50%;
