@@ -5,9 +5,21 @@ title: Books
 
 <div>
 
+    <p>
+      Below is a list of every book I've read since I became a programmer in January 2013.
+    </p>
+
     <blockquote>"Never trust anyone who has not brought a book with them." - Lemony Snicket</blockquote>
 
-    <h2>2016</h2>
+    <h2 id="2017">2017</h2>
+    <div class="messages-wrapper">
+        <div class="message to">Hey, where are the 2017 books??? 🤔</div>
+        <div class="message from">BRB, working on Lintly ATM. 💻</div>
+        <div class="message to">Okay, just don't forget to read 📚 again some day.</div>
+        <div class="message from">Of course! 🤓</div>
+    </div>
+
+    <h2 id="2016">2016</h2>
     <ul class="book-list">
         {% for book in site.data.books2016 %}
             <li>
@@ -16,7 +28,7 @@ title: Books
         {% endfor %}
     </ul>
 
-    <h2>2015</h2>
+    <h2 id="2015">2015</h2>
     <ul class="book-list">
         {% for book in site.data.books2015 %}
             <li>
@@ -25,7 +37,7 @@ title: Books
         {% endfor %}
     </ul>
 
-    <h2>2014</h2>
+    <h2 id="2014">2014</h2>
     <ul class="book-list">
         {% for book in site.data.books2014 %}
             <li>
@@ -34,7 +46,7 @@ title: Books
         {% endfor %}
     </ul>
 
-    <h2>2013</h2>
+    <h2 id="2013">2013</h2>
     <ul class="book-list">
         {% for book in site.data.books2013 %}
             <li>
