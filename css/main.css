@@ -363,9 +363,9 @@ textarea {
 
 .project-image-container img {
     width: 100%;
-    box-shadow: 0 0 7px #ccc;
-    -webkit-box-shadow: 0 0 7px #ccc;
-    -moz-box-shadow: 0 0 7px #ccc;
+    box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.5);
 }
 
 .project-description {
@@ -387,9 +387,9 @@ textarea {
 }
 .project-additional-images img {
     height: 6em;
-    box-shadow: 0 0 7px #ccc;
-    -webkit-box-shadow: 0 0 7px #ccc;
-    -moz-box-shadow: 0 0 7px #ccc;
+    box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.5);
 }
 
 ul.project-links {
