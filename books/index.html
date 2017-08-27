@@ -12,12 +12,13 @@ title: Books
     <blockquote>"Never trust anyone who has not brought a book with them." - Lemony Snicket</blockquote>
 
     <h2 id="2017">2017</h2>
-    <div class="messages-wrapper">
-        <div class="message to">Hey, where are the 2017 books??? 🤔</div>
-        <div class="message from">BRB, working on Lintly ATM. 💻</div>
-        <div class="message to">Okay, just don't forget to read 📚 again some day.</div>
-        <div class="message from">Of course! 🤓</div>
-    </div>
+    <ul class="book-list">
+        {% for book in site.data.books2017 %}
+            <li>
+                <span class="book-title">{{ book.title }}</span><span class="book-author"> by {{ book.author }}</span>
+            </li>
+        {% endfor %}
+    </ul>
 
     <h2 id="2016">2016</h2>
     <ul class="book-list">
