@@ -4,7 +4,7 @@ Hey there! You've made it to the repo for my personal website. Not sure why you'
 
 ## Building the Site
 
-While you're here you might as well learn something. This site runs on [GitHub Pages](http://github.io/) and is generated using [Jekyll](jekyllrb.com).
+While you're here you might as well learn something. This site runs on [GitHub Pages](http://github.io/) and is generated using [Jekyll](https://jekyllrb.com/).
 
 Here's how you can build the site:
 
