@@ -9,41 +9,13 @@ layout: default
 
         <p>My name is <span class="my-name">Grant McConnaughey</span>.</p>
 
-        <p>I am a web application developer living in Springfield, Missouri with my lovely wife, Erica.</p>
+        <p>I am a web application developer living in Springfield, Missouri with my lovely wife, <a href="https://twitter.com/teacherica3">Erica</a>.</p>
 
         <p>I build insurance software at <a href="http://www.britecore.com/">BriteCore</a>. I also created <a href="https://lintly.com">Lintly</a>, a continuous Python code linting app.</p>
     </div>
     <div class="home-image">
-        <img src="/images/grant-square.jpg" id="homeImage" class="circular" alt="Grant cartoon">
+        <img src="/images/grant_erica_quebec_city.jpg" id="homeImage" class="circular" alt="Erica and me in Quebec City">
 
-        <p id="weird"></p>
+        <p class="caption">Erica and me in Quebec City, Quebec. August 2017.</p>
     </div>
-
-    <script>
-        (function() {
-            var clickCount = 0;
-            var weird = document.getElementById('weird');
-
-            function imageClick() {
-                clickCount++;
-
-                if ( clickCount == 1 ) {
-                    weird.innerText = "That's me!";
-                } else if ( clickCount >= 10 && clickCount < 20 ) {
-                    weird.innerText = "Haha, okay... cut it out now.";
-                } else if ( clickCount >= 20 && clickCount < 30 ) {
-                    weird.innerText = "Come on, let's not make this weird."
-                } else if ( clickCount >= 30 ) {
-                    var extraMessage = '';
-                    if ( clickCount >= 100 ) {
-                        extraMessage = ' ARE YOU KIDDING ME.';
-                    }
-                    weird.innerText = "Well, congrats, weirdo. You've officially clicked this " + clickCount + " times." + extraMessage;
-                }
-            }
-
-            var homeImage = document.getElementById('homeImage');
-            homeImage.addEventListener('click', imageClick);
-        }());
-    </script>
 </div>
