@@ -1,7 +1,7 @@
 # Site settings
 title: Grant McConnaughey
 email: grantmcconnaughey@gmail.com
-description: "My name is Grant McConnaughey. I'm a full-stack web developer specializing in Python, Django, JavaScript, jQuery, HTML, and CSS. I love making sites that are beautiful, usable, and robust."
+description: "My name is Grant McConnaughey. I'm a full-stack web developer specializing in Python, Django, JavaScript, and Vue.js. I love making sites that are beautiful, usable, and robust."
 baseurl: ""
 url: "http://grantmcconnaughey.com/"
 username: grantmcconnaughey
