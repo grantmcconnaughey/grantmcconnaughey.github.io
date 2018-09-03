@@ -11,16 +11,8 @@ title: Books
 
     <blockquote>"Never trust anyone who has not brought a book with them." - Lemony Snicket</blockquote>
 
-    {% include book_list.html year="2018" %}
-
-    {% include book_list.html year="2017" %}
-
-    {% include book_list.html year="2016" %}
-
-    {% include book_list.html year="2015" %}
-
-    {% include book_list.html year="2014" %}
-
-    {% include book_list.html year="2013" %}
+    {% for year in (2013..2018) reversed %}
+        {% include book_list.html year=year %}
+    {% endfor %}
 
 </div>
