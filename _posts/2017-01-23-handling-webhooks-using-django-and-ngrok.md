@@ -106,7 +106,7 @@ Now that we have code to handle webhooks *and* a publicly accessible URL, let’
 
 You can add a webhook to a repository programmatically using GitHub’s API. In fact, that’s what you *should* do to automate this whole process. In the spirit of brevity, however, we’ll add a webhook through the GitHub UI. To do that, go to one of your repositories in GitHub, select Settings, then Webhooks.
 
-Add your ngrok URL + /hooks/handle_github to the Payload URL field. Next, add the secret string from your Django settings to the Secret field. GitHub will send along this secret string so that you can verify the request is really coming from them. Finally, choose the events you would like GitHub to notify your app about. When it’s all said and done, the form should look something like this:
+Add your ngrok URL + `/hooks/handle_github` to the Payload URL field. Next, add the secret string from your Django settings to the Secret field. GitHub will send along this secret string so that you can verify the request is really coming from them. Finally, choose the events you would like GitHub to notify your app about. When it’s all said and done, the form should look something like this:
 
 ![Setting up our webhook in GitHub](https://cdn-images-1.medium.com/max/4168/1*INZptfN1WBQuD2mSOhiDdg.png)*Setting up our webhook in GitHub*
 
