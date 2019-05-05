@@ -311,7 +311,7 @@ textarea {
     word-wrap: normal;
 }
 
-.post code { padding: 1px 5px; }
+.post code { padding: 0; }
 
 .post ul,
 .post ol { margin-left: 1.35em; }
