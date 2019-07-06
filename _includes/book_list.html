@@ -1,5 +1,5 @@
 {% assign book_data_file = include.year | prepend:'books' %}
-<h2 id="{{ include.year }}">{{ include.year }}</h2>
+<h3 id="{{ include.year }}">{{ include.year }}</h3>
 <ul class="book-list">
     {% for book in site.data[book_data_file] %}
         {% include book.html book=book %}

@@ -5,11 +5,31 @@ title: Books
 
 <div>
 
+    <blockquote>"Never trust anyone who has not brought a book with them." - Lemony Snicket</blockquote>
+
+    <h2>Influential Books</h2>
+
     <p>
-      Below is a list of every book I've read since I became a programmer in January 2013. I also keep track of this stuff <a href="https://www.goodreads.com/user/show/38578828-grant-mcconnaughey">on Goodreads</a>.
+        I've read a lot of books, but the following 8 have had the most influence over shaping my personality, my views, and how I work.
     </p>
 
-    <blockquote>"Never trust anyone who has not brought a book with them." - Lemony Snicket</blockquote>
+    <div class="pure-g">
+        {% for book in site.data.influential_books %}
+            <div class="pure-u-1-4">
+                <div style="padding: 1em;">
+                    <a href="{{ book.amazon_url }}" target="_blank">
+                        <img src="/images/influential_books/{{ book.image_url }}" />
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h2>Books I've Read</h2>
+
+    <p>
+        Below is a list of every book I've read since I became a programmer in January 2013. I also keep track of this stuff <a href="https://www.goodreads.com/user/show/38578828-grant-mcconnaughey">on Goodreads</a>.
+    </p>
 
     {% for year in (2013..2019) reversed %}
         {% include book_list.html year=year %}
