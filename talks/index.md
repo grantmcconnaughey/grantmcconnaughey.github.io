@@ -1,13 +1,15 @@
 ---
 layout: page
-title: Talks
+title: Talks I've Given
 ---
 
-Talks I've given.
+<h2>
+    <a href="https://youtu.be/oe0KgXxGQZ4" target="_blank">
+        BriteLines - BriteCon 2018
+    </a>
+</h2>
 
-### [BriteLines - BriteCon 2018 <i class="fas fa-external-link-alt"></i>](https://youtu.be/oe0KgXxGQZ4)
-
-At BriteCon 2018 I gave a talk on BriteLines, which is the project I currently lead at BriteCore.
+At BriteCon 2018 I gave a talk on BriteLines, which one of the projects I currently lead at BriteCore.
 
 In this talk, I demonstrate the capabilities of BriteLines to our users. This includes:
 
@@ -17,6 +19,14 @@ In this talk, I demonstrate the capabilities of BriteLines to our users. This in
 * Inheriting product definitions across multiple states
 * Versioning products over time
 
-### [BriteClaims - BriteCon 2017 <i class="fas fa-external-link-alt"></i>](https://youtu.be/ndTALDFE2wk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oe0KgXxGQZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-At BriteCon 2017 I gave a talk on BriteClaims.
+<h2>
+    <a href="https://youtu.be/ndTALDFE2wk" target="_blank">
+        BriteClaims - BriteCon 2017
+    </a>
+</h2>
+
+At BriteCon 2017 I gave a talk on BriteClaims, which is a project I formerly lead.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ndTALDFE2wk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
