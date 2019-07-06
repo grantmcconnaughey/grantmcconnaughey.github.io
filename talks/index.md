@@ -9,9 +9,9 @@ title: Talks I've Given
     </a>
 </h2>
 
-At BriteCon 2018 I gave a talk on BriteLines, which one of the projects I currently lead at BriteCore.
+At BriteCon 2018 I gave a talk on BriteLines, which is one of the projects I currently lead at BriteCore.
 
-In this talk, I demonstrate the capabilities of BriteLines to our users. This includes:
+In this talk, I demonstrate the capabilities of BriteLines to our customers. This includes:
 
 * Defining insurance products
 * Data modeling insurance products with Fields and Coverages
