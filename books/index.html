@@ -13,15 +13,11 @@ title: Books
         I've read a lot of books, but these eight have had the most influence over shaping my personality, my views, and how I work.
     </p>
 
-    <div class="pure-g">
+    <div class="influential-books-list">
         {% for book in site.data.influential_books %}
-            <div class="pure-u-1-4">
-                <div style="padding: 1em;">
-                    <a href="{{ book.amazon_url }}" target="_blank">
-                        <img src="/images/influential_books/{{ book.image_url }}" />
-                    </a>
-                </div>
-            </div>
+            <a href="{{ book.amazon_url }}" target="_blank" class="book-link">
+                <img src="/images/influential_books/{{ book.image_url }}" />
+            </a>
         {% endfor %}
     </div>
 
