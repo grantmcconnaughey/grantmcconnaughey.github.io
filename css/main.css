@@ -343,13 +343,22 @@ textarea {
 /* ----------------------------------------------------------*/
 .book-list li {
     padding: 3px 0;
-    list-style: none;
     margin-left: 0;
 }
 
 .book-author {
     font-size: .9em;
     color: #666;
+}
+
+.influential-books-list {
+    columns: 4;
+    column-gap: 1em;
+}
+
+.influential-books-list .book-link {
+    display: block;
+    padding-bottom: .65em;
 }
 
 /* Projects styles */
