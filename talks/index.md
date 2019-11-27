@@ -4,6 +4,26 @@ title: Talks I've Given
 ---
 
 <h2>
+    <a href="https://vimeo.com/374295881" target="_blank">
+        BriteQuote - BriteCon 2019
+    </a>
+</h2>
+
+At BriteCon 2019 I gave a talk on BriteQuote, BriteCore's configurable Quoting system.
+
+This video can't be embedded, so instead <a href="https://vimeo.com/374295881" target="_blank">watch it over on Vimeo</a>.
+
+<h2>
+    <a href="https://vimeo.com/374295506" target="_blank">
+        BriteLines - BriteCon 2019
+    </a>
+</h2>
+
+At BriteCon 2019 I also introduced our new BriteLines Product Owner Chelsea Ux to talk about the changes in BriteLines since BriteCon 2018.
+
+This video can't be embedded either, so <a href="https://vimeo.com/374295506" target="_blank">watch it over on Vimeo</a>.
+
+<h2>
     <a href="https://youtu.be/oe0KgXxGQZ4" target="_blank">
         BriteLines - BriteCon 2018
     </a>
