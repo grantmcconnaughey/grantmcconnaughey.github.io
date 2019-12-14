@@ -352,7 +352,7 @@ textarea {
 }
 
 .influential-books-list {
-    columns: 4;
+    columns: 8;
     column-gap: 1em;
 }
 
@@ -529,6 +529,10 @@ ul.project-links {
 
     .post .post-image-small {
         max-width: 100%;
+    }
+
+    .influential-books-list {
+        columns: 4;
     }
 
     ul.book-list {
