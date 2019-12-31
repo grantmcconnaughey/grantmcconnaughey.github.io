@@ -357,7 +357,7 @@ textarea {
 }
 
 .influential-books-list .book-link {
-    display: block;
+    display: inline-block;
     padding-bottom: .65em;
 }
 
