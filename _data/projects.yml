@@ -1,3 +1,23 @@
+-   header: Lintly
+    headerlink: google.com
+    description: In 2017 I created Lintly, an automatic Python linter which comments on GitHub pull requests. Lintly used Python 3.6 and Django 1.11. Lintly is no longer available, but many pieces of it have been open sourced, including the <a href="https://github.com/grantmcconnaughey/Lintly">Lintly CLI</a>.
+    mainimage: /images/projects/lintly/view_file.png
+    mainimagesmall: /images/projects/lintly/view_file.png
+    mainimagealt: Viewing a file with errors in Lintly
+    additionalimages:
+        -   thumbnail: /images/projects/lintly/project.png
+            full: /images/projects/lintly/project.png
+            alt: Viewing a project
+        -   thumbnail: /images/projects/lintly/files_list.png
+            full: /images/projects/lintly/files_list.png
+            alt: Project files list
+        -   thumbnail: /images/projects/lintly/issue_viewer.png
+            full: /images/projects/lintly/issue_viewer.png
+            alt: Viewing an issue
+        -   thumbnail: /images/projects/lintly/github_pr_comment.png
+            full: /images/projects/lintly/github_pr_comment.png
+            alt: GitHub PR comment
+
 -   header: MSSU Website
     headerlink: http://mssu.edu/
     description: In 2014 I created a brand new website for Missouri Southern State University. This website uses Pure CSS for its grid layout, jQuery for the home page carousel (and more), and PHP for displaying MSSU tweets and news articles from the <a href="http://accents.mssu.edu">Accents newsletter</a>. The website consists of <a href="http://mssu.edu/">one home page</a> and <a href="http://www.mssu.edu/advancement/admissions/">five templates</a> for all of the interior pages. The website is optimized for all devices from mobile to desktop.
@@ -23,6 +43,7 @@
         -   thumbnail: /images/projects/mssu-art-tablet-thumb.png
             full: /images/projects/mssu-art-tablet.png
             alt: The MSSU Art Department Page (Tablet)
+
 -   header: MSSU Online Admissions Application
     headerlink: https://sungard05.mssu.edu:8443/apply/
     description: In 2014 I created the <a href="https://sungard05.mssu.edu:8443/apply/">MSSU Online Admissions Application</a>. This application is used by every student that applies online to MSSU. It was written using Grails 2.3.
