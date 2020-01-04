@@ -1,5 +1,5 @@
 -   header: Lintly
-    headerlink: google.com
+    headerlink: https://github.com/grantmcconnaughey/Lintly
     description: In 2017 I created Lintly, an automatic Python linter which comments on GitHub pull requests. Lintly used Python 3.6 and Django 1.11. Lintly is no longer available, but many pieces of it have been open sourced, including the <a href="https://github.com/grantmcconnaughey/Lintly">Lintly CLI</a>.
     mainimage: /images/projects/lintly/view_file.png
     mainimagesmall: /images/projects/lintly/view_file.png
