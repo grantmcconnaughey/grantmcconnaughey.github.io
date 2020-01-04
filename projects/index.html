@@ -3,7 +3,7 @@ layout: lightbox
 title: Projects
 ---
 
-<h2>Open Source</h2>
+<h2 id="open-source">Open Source</h2>
 
 <div>
 
@@ -18,13 +18,13 @@ title: Projects
 
 </div>
 
-<h2 style="margin-bottom: 0;">Other Projects</h2>
+<h2 id="other-projects" style="margin-bottom: 0;">Other Projects</h2>
 
 <div style="margin-top: 0;">
 
     {% for project in site.data.projects %}
         <div class="project cf">
-            <h3><a href="{{ project.headerlink }}">{{ project.header }}</a></h3>
+            <h3 id="{{ project.header | slugify }}"><a href="{{ project.headerlink }}">{{ project.header }}</a></h3>
 
             <div class="cf">
                 <div class="project-image-container">
