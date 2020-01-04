@@ -29,7 +29,7 @@ Here's how you can build the site:
 4. Serve up the site:
 
     ```
-    jekyll serve -w
+    bundle exec jekyll serve
     ```
 
 5. Navigate to http://127.0.0.1:4000/ in your browser.
