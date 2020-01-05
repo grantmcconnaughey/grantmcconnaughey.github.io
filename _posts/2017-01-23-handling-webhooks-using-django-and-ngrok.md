@@ -21,7 +21,7 @@ Another way to know an event has occurred is to have the other service inform yo
 
 GitHub has a [plethora of events](https://developer.github.com/webhooks/#events) that can trigger webhooks. The event we’ll handle is the default push event, which occurs when a user pushes commits, branches, or tags to a GitHub repository.
 
-Let’s write some code that handles GitHub’s webhooks. We’re writing a Django app, so we’ll create a view function. Be sure to wire up this view to the URL /hooks/handle_github.
+Let’s write some code that handles GitHub’s webhooks. We’re writing a Django app, so we’ll create a view function. Be sure to wire up this view to the URL `/hooks/handle_github`.
 
 Below is a view function that will handle GitHub webhooks [based on the instructions in GitHub’s documentation](https://developer.github.com/webhooks/creating/). For this to work, you’ll need to first add a `GITHUB_WEBHOOK_SECRET` to your settings file. Think of this as your webhook’s password, so make it a long string with lots of random characters. Also, remember it, because we’ll need it later.
 
@@ -66,7 +66,7 @@ def handle_github_hook(request):
     return HttpResponse('Webhook received', status=httplib.ACCEPTED)
 ```
 
-Requests from GitHub come into our app through the handle_github_hook view function. The view ensures the request is authorized, loads the payload JSON, does something useful with the payload, and returns an HTTP response.
+Requests from GitHub come into our app through the `handle_github_hook` view function. The view ensures the request is authorized, loads the payload JSON, does something useful with the payload, and returns an HTTP response.
 
 When writing your handler, keep in mind that [GitHub expects you to respond to webhooks within 30 seconds](https://developer.github.com/guides/best-practices-for-integrators/#favor-asynchronous-work-over-synchronous). If the task you need to perform can happen quickly then do it synchronously. Otherwise it’s probably best to put the task in the background using [Celery](http://www.celeryproject.org/) or [RQ](http://python-rq.org/).
 
@@ -114,13 +114,13 @@ Click the Add webhook button and your webhook is ready for action.
 
 ## Testing it out
 
-It’s finally time to confirm this whole thing is working. To do that, start up the development Django server by running python manage.py runserver. This should start your server on port 8000, which is the port ngrok expects.
+It’s finally time to confirm this whole thing is working. To do that, start up the development Django server by running `python manage.py runserver`. This should start your server on port 8000, which is the port ngrok expects.
 
 Next we’ll need to trigger an event in GitHub. If you’re webhook is configured to handle the default push event then pushing a branch to GitHub will suffice.
 
 Clone the repository where you created your webhook. For example:
 
-    $ git clone [https://github.com/grantmcconnaughey/django-field-history.git](https://github.com/grantmcconnaughey/django-field-history.git)
+    $ git clone https://github.com/grantmcconnaughey/django-field-history.git
 
 Now, create a new branch and push it back to GitHub.
 

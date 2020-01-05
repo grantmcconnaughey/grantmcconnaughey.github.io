@@ -7,7 +7,7 @@ comments: true
 ---
 Django had support for loading initial data into a database before Django 1.7. It was simple: put a file called `initial_data.json` in the `fixtures` folder of one of your Django apps and it will be loaded into your database each time the application starts up. It looked a little something like this:
 
-{% highlight json %}
+```json
 [
   {
     "model": "location.state",
@@ -18,7 +18,7 @@ Django had support for loading initial data into a database before Django 1.7. I
     }
   }
 ]
-{% endhighlight %}
+```
 
 This would create a new entry into the database table for your `State` model. Easy, right?
 
@@ -32,7 +32,7 @@ If you are dead set on using your old `initial_data.json` files then know that y
 
 First you will need to create a migration for your app. Run the following command: `python manage.py makemigrations --empty location`. This will create a new migration in your app's `migrations` folder. The migration will be pretty empty; it will probably look something like this:
 
-{% highlight python %}
+```python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.db import models, migrations
@@ -46,11 +46,11 @@ class Migration(migrations.Migration):
 
     operations = [
     ]
-{% endhighlight %}
+```
 
 Next, edit the migration so that it calls the `loaddata` command, passing your fixture's file name in the process.
 
-{% highlight python %}
+```python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.core.management import call_command
@@ -75,7 +75,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RunPython(load_fixture, reverse_code=unload_fixture),
     ]
-{% endhighlight %}
+```
 
 The fixture will be loaded when you run `python manage.py migrate`. After your fixture is loaded into the database it won't be loaded again.
 
@@ -83,7 +83,7 @@ The fixture will be loaded when you run `python manage.py migrate`. After your f
 
 The second option is to use the Django ORM directly. It starts out very much like the first. Create an empty migration by running `python manage.py makemigrations --empty location`. Then update your newly created migration file to look like this:
 
-{% highlight python %}
+```python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.core.management import call_command
@@ -108,11 +108,11 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RunPython(create_states, reverse_code=remove_states),
     ]
-{% endhighlight %}
+```
 
 When using `RunPython` your forward and reverse functions receive two arguments. The first is an instance of `django.apps.registry.Apps` and the second is an instance of `SchemaEditor`. We will really only need the first in order to get the `State` model class. Calling `apps.get_model("location", "State")` should do the trick. After that, use the Django ORM to create any of the database entries that you need. If we want entries for Missouri, New York, and California then the `create_states` function would look like this:
 
-{% highlight python %}
+```python
 def create_states(apps, schema_editor):
     State = apps.get_model("location", "State")
     State.objects.bulk_create([
@@ -120,6 +120,6 @@ def create_states(apps, schema_editor):
         State(code="NY", name="New York"),
         State(code="CA", name="California"),
     ])
-{% endhighlight %}
+```
 
 This option is certainly easier if you only need to create a few records.
