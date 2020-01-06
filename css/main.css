@@ -322,6 +322,15 @@ textarea {
     max-width: 50%;
 }
 
+.anchor,
+.anchor:visited,
+.anchor:hover,
+.anchor:active {
+    font-size: .7em;
+    color: #ccc;
+    vertical-align: middle;
+}
+
 /* terminal */
 .post pre.terminal {
     border: 1px solid #000;
