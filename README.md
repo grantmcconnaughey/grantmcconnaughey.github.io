@@ -33,3 +33,7 @@ Here's how you can build the site:
     ```
 
 5. Navigate to http://127.0.0.1:4000/ in your browser.
+
+## Credits
+
+* Favicon generated from [favicon.io](https://favicon.io).
