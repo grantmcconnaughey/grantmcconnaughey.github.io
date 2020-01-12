@@ -2,6 +2,7 @@
 layout: post
 title:  A Quick 7-Step Guide for Naming Your Next App or Startup
 date:   2017-01-16 21:10:00
+categories: projects
 comments: true
 ---
 

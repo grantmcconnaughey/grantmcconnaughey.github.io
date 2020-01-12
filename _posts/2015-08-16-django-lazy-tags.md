@@ -2,7 +2,7 @@
 layout: post
 title:  "Django Lazy Tags"
 date:   2015-08-16 21:10:00
-categories: django
+categories: django projects
 comments: true
 ---
 I work on a web application called [SideKick](https://sidekick.sidecarsinc.com). SideKick has several dashboards depending on the type of person logged in. The "type of person" could be an employee of SideCars (the company where I work), the owner of a car dealership, or a dealer's agent. Each dashboard has lots of handy widgets, as dashboards are wont to do. We contain the logic of each widget in a Django template tag so they can easily be resused. Here's an example of a widget:

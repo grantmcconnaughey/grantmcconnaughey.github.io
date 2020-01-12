@@ -349,6 +349,19 @@ textarea {
     font-size: .8em;
 }
 
+.tag-list {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.tag {
+    font-size: .9em;
+    color: white;
+    background-color: #999;
+    border-radius: 4px;
+    padding: 3px 8px;
+}
+
 /* Books styles */
 /* ----------------------------------------------------------*/
 .book-list li {
