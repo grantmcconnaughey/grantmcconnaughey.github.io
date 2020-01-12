@@ -509,6 +509,7 @@ ul.project-links {
 /* Media queries */
 /* ----------------------------------------------------------*/
 
+/* Phone */
 @media screen and (max-width: 567px) {
 
     textarea {
@@ -520,6 +521,10 @@ ul.project-links {
     .site-title {
         width: 100%;
         text-align: center;
+    }
+
+    .site-nav .page-link {
+        padding: 18px 7px;
     }
 
     .site-nav {
@@ -572,6 +577,19 @@ ul.project-links {
         padding: 1em 1em 0;
     }
 
+}
+
+@media screen and (max-width: 693px) {
+    .site-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .site-nav {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
