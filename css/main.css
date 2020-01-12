@@ -518,13 +518,15 @@ ul.project-links {
 
     .wrap { padding: 0 1em; }
 
+    .site-header .wrap { padding: 0; }
+
     .site-title {
         width: 100%;
         text-align: center;
     }
 
     .site-nav .page-link {
-        padding: 18px 7px;
+        padding: 18px 10px;
     }
 
     .site-nav {
