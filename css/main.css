@@ -115,6 +115,7 @@ textarea {
 .site-nav .page-link:hover {
     background-color: #205caa; /* Fallback for older browsers (I'm looking at you, IE 8) */
     background-color: rgba(239, 239, 239, 0.6);
+    color: #333;
     text-decoration: none;
 }
 
