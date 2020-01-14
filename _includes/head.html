@@ -17,8 +17,8 @@
 
     {% if page.summary %}
     <meta name="twitter:description" content="{{ page.summary }}">
-    {% elsif page.content %}
-    <meta name="twitter:description" content="{{ post.content | truncatewords: 50 }}">
+    {% elsif page.excerpt %}
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip | truncatewords: 50 }}">
     {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
