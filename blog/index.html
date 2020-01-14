@@ -14,8 +14,17 @@ title: Blog
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
 
-            <span class="blog-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-            <p>{{ post.content | truncatewords: 50 }}</p>
+            <p class="blog-meta">
+                <i class="fad fa-calendar-alt"></i> {{ post.date | date: "%B %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
+                in
+                {% for category in post.categories %}
+                    <span class="tag"><i class="fad fa-tags"></i> {{ category }}</span>
+                {% endfor %}
+            </p>
+
+            <p>
+                {{ post.content | truncatewords: 50 }}
+            </p>
         </div>
     {% endfor %}
 </div>
