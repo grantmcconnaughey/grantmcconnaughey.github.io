@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://grantmcconnaughey.com/"
 username: grantmcconnaughey
 timezone: America/Chicago
+twitter_username: gmcconnaughey
 
 # Build settings
 markdown: kramdown
