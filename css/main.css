@@ -380,7 +380,7 @@ textarea {
 }
 
 .influential-books-list .book-link {
-    display: inline-block;
+    display: block;
     padding-bottom: .65em;
 }
 
