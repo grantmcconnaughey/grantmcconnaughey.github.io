@@ -158,7 +158,7 @@ Now when I need a URL, I simply pass along the service to the url template tag:
 
 Lintly uses several third-party APIs, the most important of which is the GitHub API.
 
-I started out putting API calls directly in my views, models, and template tags. For example, here’s what the User.get_projects() method looked like originally:
+I started out putting API calls directly in my views, models, and template tags. For example, here’s what the `User.get_projects()` method looked like originally:
 
 ```python
 def get_projects(self):
@@ -168,7 +168,7 @@ def get_projects(self):
     return Project.objects.filter(owner__login__in=owner_logins)
 ```
 
-Notice that this creates a Github client object directly (the Github client comes from the great [PyGithub](https://github.com/PyGithub/PyGithub) library). Unfortunately, the get_projects method was called from the project sidebar (the sidebar on the left-hand side of each and every page while logged into Lintly). This meant I had to mock the get_projects method on every single view test…quite the nightmare!
+Notice that this creates a Github client object directly (the Github client comes from the great [PyGithub](https://github.com/PyGithub/PyGithub) library). Unfortunately, the get_projects method was called from the project sidebar (the sidebar on the left-hand side of each and every page while logged into Lintly). This meant I had to mock the `get_projects` method on every single view test...quite the nightmare!
 
 ### How I fixed the mistake
 
@@ -178,7 +178,7 @@ First, I refactored all interactions with GitHub into their own class: the GitHu
 
 Now when I need to call an external service I get a GitBackend instance depending on the service. In production, service is always 'gh', which means we always use the GitHubBackend class to make API calls. In unit tests, service is always 'dummy', and the DummyGitBackend stub class is used. This ensures that my tests never call out to GitHub.
 
-Here is the new implementation of User.get_projects():
+Here is the new implementation of `User.get_projects()`:
 
 ```python
 # This dict lives in its own file
