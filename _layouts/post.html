@@ -20,21 +20,25 @@ layout: default
         {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor" %}
     </article>
 
-    {% if page.comments %}
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES * * */
-            var disqus_shortname = 'grantdev';
-            var disqus_title = '{{page.title}}';
+    <hr style="margin-top: 2em; margin-bottom: 2em;" />
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    {% endif %}
+    <div>
+        <form style="text-align:center;"
+              class="pure-form"
+              action="https://tinyletter.com/grantmcconnaughey"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://tinyletter.com/grantmcconnaughey', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            <p>
+                Sign up to receive e-mail updates in your inbox:
+            </p>
+            <input type="text" name="email" id="tlemail" placeholder="Enter your email address" style="min-width: 22rem;" />
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="Subscribe" class="pure-button pure-button-primary" />
+            <p>
+                <small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small>
+            </p>
+        </form>
+    </div>
 
 </div>
