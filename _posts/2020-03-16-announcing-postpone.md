@@ -69,7 +69,7 @@ This initial version of [Postpone](https://www.postpone.app) is just a start. Ov
 To suggest a feature or report a bug please either:
 
 * Tweet [@grantmcconnaughey](https://twitter.com/gmcconnaughey)
-* Post in [/r/postpone](reddit.com/r/postpone)
+* Post in [/r/postpone](https://reddit.com/r/postpone)
 * E-mail <a href="mailto:PostponeReddit@gmail.com">PostponeReddit@gmail.com</a>
 
 Happy Postponing!
