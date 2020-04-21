@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="page"></div>
+
+    <header class="post-header">
+        <h1>#{{ page.tag }}</h1>
+    </header>
+
+    <section class="post-content">
+
+        <p>
+            To receive updates in your inbox, <a href="https://tinyletter.com/grantmcconnaughey">subscribe to my newsletter</a>.
+        </p>
+
+        <div>
+            {% for post in site.categories[page.tag] %}
+                {% include post.html post=post %}
+            {% endfor %}
+        </div>
+
+    </section>
+
+</div>

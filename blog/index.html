@@ -9,23 +9,6 @@ title: Blog
 
 <div>
     {% for post in site.posts %}
-        {% assign readTimeMinutes = post.content | number_of_words | divided_by: 180 | round %}
-        <div>
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-
-            <p class="blog-meta">
-                <i class="fad fa-calendar-alt"></i> {{ post.date | date: "%B %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
-                • <i class="fad fa-clock"></i> {{ readTimeMinutes }} min read •
-                {% for category in post.categories %}
-                    <span class="tag"><i class="fad fa-tags"></i> {{ category }}</span>
-                {% endfor %}
-            </p>
-
-            <p>
-                {{ post.excerpt }}
-            </p>
-        </div>
+        {% include post.html post=post %}
     {% endfor %}
 </div>

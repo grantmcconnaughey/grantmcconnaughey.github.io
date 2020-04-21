@@ -11,3 +11,7 @@ twitter_username: gmcconnaughey
 # Build settings
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
+
+collections:
+  tags:
+    output: true
