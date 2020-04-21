@@ -8,19 +8,28 @@
         -   thumbnail: /images/projects/postpone/queue.png
             full: /images/projects/postpone/queue.png
             alt: Post queue
-        -   thumbnail: /images/projects/postpone/profile.png
-            full: /images/projects/postpone/profile.png
-            alt: Profile page
+        -   thumbnail: /images/projects/postpone/subreddit-analysis.png
+            full: /images/projects/postpone/subreddit-analysis.png
+            alt: Subreddit Analysis
+        -   thumbnail: /images/projects/postpone/cross-posting.png
+            full: /images/projects/postpone/cross-posting.png
+            alt: Cross-post support
+        -   thumbnail: /images/projects/postpone/import.png
+            full: /images/projects/postpone/import.png
+            alt: Bulk Import posts
         -   thumbnail: /images/projects/postpone/update-reddit-post.png
             full: /images/projects/postpone/update-reddit-post.png
             alt: Updating a Reddit post
+        -   thumbnail: /images/projects/postpone/profile.png
+            full: /images/projects/postpone/profile.png
+            alt: Profile page
         -   thumbnail: /images/projects/postpone/subreddit-search.png
             full: /images/projects/postpone/subreddit-search.png
             alt: Subreddit search
 
 -   header: Lintly
     headerlink: https://github.com/grantmcconnaughey/Lintly
-    description: In 2017 I created Lintly, an automatic Python linter which comments on GitHub pull requests. Lintly used Python 3.6 and Django 1.11. Lintly is no longer available, but many pieces of it have been open sourced, including the <a href="https://github.com/grantmcconnaughey/Lintly">Lintly CLI</a>.
+    description: In 2017 I created Lintly, an automatic Python linter which comments on GitHub pull requests. Lintly used Python 3.6 and Django 1.11. Lintly is no longer available, but many pieces of it have been open sourced, including the <a href="https://github.com/grantmcconnaughey/Lintly">Lintly CLI</a> and <a href="https://www.flake8rules.com/">Flake8 Rules</a>.
     mainimage: /images/projects/lintly/view_file.png
     mainimagesmall: /images/projects/lintly/view_file.png
     mainimagealt: Viewing a file with errors in Lintly
