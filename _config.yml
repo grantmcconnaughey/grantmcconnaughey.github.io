@@ -12,6 +12,7 @@ twitter_username: gmcconnaughey
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 
+# https://kylewbanks.com/blog/creating-category-pages-in-jekyll-without-plugins
 collections:
   tags:
     output: true

@@ -1,6 +1,6 @@
 -   header: Postpone
     headerlink: https://www.postpone.app
-    description: In 2020 I created Postpone, an app to schedule Reddit posts for increased views, upvotes, and traffic. Postpone was built using Python/Django and Vue.js. Its hosted on AWS using services like Lambda, S3, Cloudfront, API Gateway, and more.
+    description: In 2020 I created <a href="https://www.postpone.app">Postpone</a>, an app to schedule Reddit posts for increased views, upvotes, and traffic. Postpone was built using Python/Django and Vue.js. It is hosted on AWS using services like Lambda, S3, Cloudfront, API Gateway, and more. The codebase structure for Postpone was extracted to the open-source project <a href="https://github.com/grantmcconnaughey/cookiecutter-django-vue-graphql-aws">cookiecutter-django-vue-graphql-aws</a>.
     mainimage: /images/projects/postpone/home.png
     mainimagesmall: /images/projects/postpone/home.png
     mainimagealt: Postpone home page
