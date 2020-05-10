@@ -9,10 +9,10 @@ title: Talks I've Given
     </a>
 </h2>
 
-At BriteCon 2019 I gave a talk on BriteQuote, BriteCore's configurable Quoting system.
+At BriteCon 2019 I gave a talk on BriteQuote, BriteCore's configurable Quoting system. During my time at BriteCore I architected BriteQuote from the first line of code, hired the engineers and Product Owner for this team, and managed the team for a year and a half.
 
-<div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/374295881" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="embed-container">
+    <iframe src="https://player.vimeo.com/video/374295881" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
 <h2>
@@ -21,10 +21,10 @@ At BriteCon 2019 I gave a talk on BriteQuote, BriteCore's configurable Quoting s
     </a>
 </h2>
 
-At BriteCon 2019 I also introduced our new BriteLines Product Owner Chelsea Ux to talk about the changes in BriteLines since BriteCon 2018.
+At BriteCon 2019 I also introduced BriteCore's new BriteLines Product Owner Chelsea Ux to talk about the changes in BriteLines since BriteCon 2018.
 
-<div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/374295506" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="embed-container">
+    <iframe src="https://player.vimeo.com/video/374295506" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -34,7 +34,7 @@ At BriteCon 2019 I also introduced our new BriteLines Product Owner Chelsea Ux t
     </a>
 </h2>
 
-At BriteCon 2018 I gave a talk on BriteLines, which is one of the projects I currently lead at BriteCore.
+At BriteCon 2018 I gave a talk on BriteLines, which is one of the projects I lead at BriteCore.
 
 In this talk, I demonstrate the capabilities of BriteLines to our customers. This includes:
 
@@ -44,7 +44,9 @@ In this talk, I demonstrate the capabilities of BriteLines to our customers. Thi
 * Inheriting product definitions across multiple states
 * Versioning products over time
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oe0KgXxGQZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/oe0KgXxGQZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <h2>
     <a href="https://youtu.be/ndTALDFE2wk" target="_blank">
@@ -52,6 +54,8 @@ In this talk, I demonstrate the capabilities of BriteLines to our customers. Thi
     </a>
 </h2>
 
-At BriteCon 2017 I gave a talk on BriteClaims, which is a project I formerly lead.
+At BriteCon 2017 I gave a talk on BriteClaims, which is a project I lead.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ndTALDFE2wk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/ndTALDFE2wk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
