@@ -192,12 +192,14 @@ textarea {
   float: right;
   width: 40%;
   text-align: center;
+  margin-top: 1em;
 }
 
 .home-image img {
     width: auto;
     max-width: 100%;
     max-height: 16em;
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem #e8e8e8);
 }
 .circular {
     width: 100%;
