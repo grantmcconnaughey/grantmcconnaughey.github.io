@@ -31,7 +31,7 @@ GEM
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
     faraday-net_http (1.0.1)
-    ffi (1.15.0)
+    ffi (1.17.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (212)
@@ -259,10 +259,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  eventmachine (~> 1.2.7)
+  ffi (~> 1.15, >= 1.15.4)
   github-pages (~> 212)
   jekyll-feed (~> 0.15.1)
   minima (~> 2.5.1)
   tzinfo-data
 
 BUNDLED WITH
-   2.1.4
+   2.3.26
