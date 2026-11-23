@@ -1,0 +1,96 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <p class="site-footer__hello">Say hi! 👋</p>
+        <ul class="site-footer__links">
+          {
+            site.socials.map((s) => (
+              <li>
+                <a href={s.href} rel="me">
+                  <Icon name={s.icon} size={18} />
+                  {s.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <p class="site-footer__label">From the archives</p>
+        <ul class="site-footer__links">
+          <li><a href="/blog/">Writing</a></li>
+          <li><a href="https://www.goodreads.com/user/show/38578828-grant-mcconnaughey">Bookshelf</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__fine">© 2013–{year} Grant McConnaughey</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    padding-block: 3rem 2rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+  }
+  .site-footer__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem 5rem;
+  }
+  .site-footer__hello {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+  .site-footer__label {
+    font-size: 0.8rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0.55rem 0 1rem;
+  }
+  .site-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .site-footer__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 550;
+    transition: border-color 0.15s, color 0.15s, transform 0.15s;
+  }
+  .site-footer__links a:hover {
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    transform: translateY(-2px);
+  }
+  .site-footer__fine {
+    margin: 2.5rem 0 0;
+    color: var(--ink-faint);
+    font-size: 0.85rem;
+  }
+</style>

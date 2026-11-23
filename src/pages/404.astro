@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import cartoon from '../assets/grant-cartoon.jpg';
+---
+
+<Base title="Page not found">
+  <div class="container narrow lost">
+    <Image src={cartoon} alt="A cartoon drawing of a younger Grant, smiling a little sheepishly" width={260} />
+    <p class="eyebrow">404</p>
+    <h1>Well, this is awkward.</h1>
+    <p class="lead">
+      That page doesn’t exist (anymore?). Here’s cartoon me from 2013, who is also a little lost.
+    </p>
+    <div class="button-row">
+      <a class="button button--primary" href="/">Take me home <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="button" href="/work/">See my work</a>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .lost :global(img) {
+    width: 11rem;
+    border-radius: 50%;
+    border: 3px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--accent);
+    margin-bottom: 2rem;
+    transform: rotate(-4deg);
+  }
+</style>

@@ -1,0 +1,106 @@
+---
+import { site } from '../data/site';
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href.replace(/\/$/, ''));
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label={`${site.name}, home`}>
+      <span class="brand__mark" aria-hidden="true">G</span>
+      <span class="brand__name">Grant McConnaughey</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        {
+          site.nav.map((item) => (
+            <li>
+              <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: rgb(255 255 255 / 0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 4.25rem;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+  }
+  .brand__mark {
+    display: grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 800;
+    transform: rotate(-6deg);
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .brand:hover .brand__mark {
+    transform: rotate(6deg) scale(1.08);
+  }
+  .nav {
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav a {
+    display: block;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    color: var(--ink-soft);
+    font-weight: 550;
+    font-size: 0.975rem;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav a:hover {
+    color: var(--ink);
+    background: var(--surface);
+  }
+  .nav a[aria-current='page'] {
+    color: var(--accent-ink);
+    background: var(--accent-tint);
+  }
+  @media (max-width: 30rem) {
+    .brand__name {
+      display: none;
+    }
+  }
+</style>

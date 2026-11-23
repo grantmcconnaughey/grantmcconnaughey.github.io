@@ -1,0 +1,163 @@
+---
+import Base from '../layouts/Base.astro';
+import books from '../data/books.json';
+
+const total = books.years.reduce((n, y) => n + y.books.length, 0);
+const first = books.years.at(-1)?.year;
+const last = books.years[0]?.year;
+---
+
+<Base title="Bookshelf" description="Every book Grant McConnaughey has read since becoming a programmer, plus the ones that shaped him most.">
+  <div class="container narrow">
+    <p class="eyebrow">Bookshelf</p>
+    <h1>Books I’ve read</h1>
+    <blockquote class="quote">
+      “Never trust anyone who has not brought a book with them.”
+      <cite>Lemony Snicket</cite>
+    </blockquote>
+
+    <section class="section--sm">
+      <h2>The ones that stuck</h2>
+      <p class="muted">
+        I’ve read a lot of books, but these eight have had the most influence on my personality, my views, and how I
+        work.
+      </p>
+      <ul class="covers">
+        {
+          books.influential.map((book, i) => (
+            <li style={`--tilt: ${i % 2 ? 2 : -2}deg`}>
+              <img
+                src={`/images/influential_books/${book.image}`}
+                alt={`${book.title} by ${book.author}`}
+                title={`${book.title} by ${book.author}`}
+                loading="lazy"
+                width="160"
+                height="240"
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="section--sm">
+      <h2>The full list</h2>
+      <p class="muted">
+        Every book I read from {first} to {last}: <strong>{total} in all</strong>. I also kept track
+        <a href="https://www.goodreads.com/user/show/38578828-grant-mcconnaughey">on Goodreads</a>.
+      </p>
+      {
+        books.years.map((y, i) => (
+          <details class="year" open={i === 0}>
+            <summary>
+              <span class="year__num">{y.year}</span>
+              <span class="chip">{y.books.length} books</span>
+            </summary>
+            <ol class="list" reversed>
+              {y.books.map((b) => (
+                <li>
+                  <span class="list__title">{b.title}</span>
+                  <span class="list__author"> by {b.author}</span>
+                </li>
+              ))}
+            </ol>
+          </details>
+        ))
+      }
+    </section>
+  </div>
+</Base>
+
+<style>
+  .quote {
+    margin: 1.5rem 0 0;
+    padding-left: 1.25rem;
+    border-left: 4px solid var(--accent);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+  .quote cite {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: var(--ink-faint);
+  }
+  .quote cite::before {
+    content: '— ';
+  }
+  .section--sm {
+    margin-top: 3.5rem;
+  }
+  .covers {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .covers img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px -10px rgb(27 24 22 / 0.45);
+    transform: rotate(var(--tilt));
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .covers li:hover img {
+    transform: rotate(0) translateY(-6px) scale(1.04);
+  }
+  .year {
+    border-top: 1px solid var(--line);
+  }
+  .year:last-of-type {
+    border-bottom: 1px solid var(--line);
+  }
+  .year summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    list-style: none;
+  }
+  .year summary::-webkit-details-marker {
+    display: none;
+  }
+  .year summary::after {
+    content: '+';
+    margin-left: auto;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--accent);
+    transition: transform 0.2s;
+  }
+  .year[open] summary::after {
+    transform: rotate(45deg);
+  }
+  .year__num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.35rem;
+  }
+  .list {
+    margin: 0 0 1.5rem;
+    padding-left: 2rem;
+  }
+  .list li {
+    margin-bottom: 0.35rem;
+  }
+  .list li::marker {
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .list__title {
+    font-weight: 550;
+  }
+  .list__author {
+    color: var(--ink-soft);
+  }
+</style>
