@@ -1,0 +1,318 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PostponeMark from '../components/PostponeMark.astro';
+import { jobs, projects } from '../data/work';
+---
+
+<Base title="Work" description="What Grant McConnaughey is working on: Postpone, plus past jobs, side projects, and open source.">
+  <section class="container">
+    <p class="eyebrow">Work</p>
+    <h1>Things I’ve <span class="squiggle">built</span>.</h1>
+    <p class="lead intro">
+      I’ve been building software since 2013, as an engineer, a manager, and now a founder.
+      Here’s what I’m doing now and how I got here.
+    </p>
+  </section>
+
+  <!-- Featured: Postpone -->
+  <section class="container section--tight">
+    <article class="feature">
+      <div class="feature__body">
+        <span class="chip chip--accent"><span class="dot" aria-hidden="true"></span> What I’m doing now</span>
+        <h2 class="feature__title"><PostponeMark size={44} /> Postpone</h2>
+        <p class="feature__lead">
+          A social media marketing tool for creators, agencies, and brands.
+        </p>
+        <p>
+          I started Postpone in 2020 as a side project for scheduling Reddit posts. In 2022 I left Zapier to go
+          all-in on it, and it’s been my full-time company ever since. As the founder, I do a bit of everything: deciding what to build, designing the UI, writing
+          the backend and frontend, and answering customer emails.
+        </p>
+        <div class="button-row">
+          <a class="button button--primary" href="https://www.postpone.app">
+            Visit postpone.app <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <dl class="feature__meta">
+        <div><dt>Founded</dt><dd>2020</dd></div>
+        <div><dt>Role</dt><dd>Founder</dd></div>
+        <div><dt>Based in</dt><dd>Wisconsin</dd></div>
+      </dl>
+    </article>
+  </section>
+
+  <!-- Experience -->
+  <section class="container section" aria-labelledby="experience">
+    <p class="eyebrow">Experience</p>
+    <h2 id="experience">Where I’ve worked</h2>
+    <ol class="timeline">
+      {
+        jobs.map((job) => (
+          <li class:list={['timeline__item', { 'is-current': job.current }]}>
+            <div class="timeline__years">{job.years}</div>
+            <div class="timeline__body">
+              <h3>
+                {job.current && <PostponeMark size={20} class="timeline__logo" />}
+                {job.url ? <a href={job.url}>{job.company}</a> : job.company}
+              </h3>
+              <p class="timeline__role">{job.role}</p>
+              <p class="timeline__summary">{job.summary}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <!-- Projects & open source -->
+  <section class="container section" aria-labelledby="projects">
+    <p class="eyebrow">Projects</p>
+    <h2 id="projects">Side projects & open source</h2>
+    <div class="grid">
+      {
+        projects.map((p) => (
+          <a class="card project" href={p.url}>
+            <div class="project__top">
+              <h3>{p.name}</h3>
+              {p.github ? (
+                <span class="project__icon" title="Opens on GitHub">
+                  <Icon name="github" size={20} />
+                  <span class="sr-only">(on GitHub)</span>
+                </span>
+              ) : (
+                <span class="project__icon" aria-hidden="true">↗</span>
+              )}
+            </div>
+            <p>{p.summary}</p>
+            <span class="chip">{p.tag}</span>
+          </a>
+        ))
+      }
+    </div>
+    <p class="more">
+      <a href="https://github.com/grantmcconnaughey"><Icon name="github" size={18} /> More on GitHub →</a>
+    </p>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    max-width: 38rem;
+  }
+  .section--tight {
+    margin-top: 3rem;
+  }
+
+  /* Featured project */
+  .feature {
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border: 2px solid var(--ink);
+    border-radius: var(--radius-lg);
+    background:
+      radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--accent) 18%, transparent) 0, transparent 45%),
+      var(--accent-tint);
+    box-shadow: 6px 6px 0 var(--ink);
+  }
+  @media (min-width: 52rem) {
+    .feature {
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+    }
+  }
+  .feature__title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .feature h2 {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    margin: 1rem 0 0.5rem;
+  }
+  .feature__lead {
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+  .feature__body p:not(.feature__lead) {
+    max-width: 36rem;
+    color: var(--ink-soft);
+  }
+  .feature .button {
+    margin: 0;
+  }
+  .feature__meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    align-content: start;
+    margin: 0;
+    min-width: 11rem;
+  }
+  .feature__meta div {
+    padding: 0.75rem 0.9rem;
+    background: var(--bg);
+    border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+    border-radius: var(--radius);
+  }
+  .feature__meta dt {
+    font-size: 0.75rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .feature__meta dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1rem, 3.5vw, 1.35rem);
+  }
+  @media (min-width: 52rem) {
+    .feature__meta {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  .dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 0 rgb(34 197 94 / 0.6);
+    animation: pulse 2s infinite;
+    vertical-align: 0.05em;
+  }
+  @keyframes pulse {
+    70% { box-shadow: 0 0 0 7px rgb(34 197 94 / 0); }
+    100% { box-shadow: 0 0 0 0 rgb(34 197 94 / 0); }
+  }
+
+  /* Timeline */
+  .timeline {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    max-width: 50rem;
+  }
+  .timeline__item {
+    position: relative;
+    display: grid;
+    gap: 0.25rem 2rem;
+    padding: 0 0 2.25rem 1.75rem;
+    border-left: 2px solid var(--line);
+  }
+  .timeline__item:last-child {
+    padding-bottom: 0;
+  }
+  .timeline__item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0.35rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--ink-faint);
+  }
+  .timeline__item.is-current::before {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-tint);
+  }
+  @media (min-width: 40rem) {
+    .timeline__item {
+      grid-template-columns: 8rem 1fr;
+    }
+  }
+  .timeline__years {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.1rem;
+  }
+  .timeline h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0;
+  }
+  .timeline h3 a {
+    color: var(--ink);
+    text-decoration-color: transparent;
+  }
+  .timeline h3 a:hover {
+    color: var(--accent-ink);
+    text-decoration-color: var(--accent);
+  }
+  .timeline__role {
+    margin: 0.15rem 0 0.4rem;
+    font-weight: 550;
+    color: var(--accent-ink);
+  }
+  .timeline__summary {
+    margin: 0;
+    color: var(--ink-soft);
+  }
+
+  /* Project cards */
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: var(--ink);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+  }
+  .project:hover {
+    transform: translateY(-3px);
+    border-color: var(--ink);
+    box-shadow: var(--shadow-pop);
+  }
+  .project h3 {
+    margin: 0;
+  }
+  .project p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    flex: 1;
+  }
+  .project .chip {
+    align-self: flex-start;
+  }
+  .project__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .project h3 {
+    font-size: 1.1rem;
+    overflow-wrap: anywhere;
+  }
+  .project__icon {
+    flex: none;
+    color: var(--ink-faint);
+    transition: transform 0.2s, color 0.2s;
+  }
+  .project:hover .project__icon {
+    color: var(--accent);
+    transform: translate(2px, -2px);
+  }
+  .more {
+    margin-top: 1.5rem;
+    font-weight: 600;
+  }
+  .more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+</style>

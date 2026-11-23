@@ -1,0 +1,212 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import avatar from '../assets/avatar.jpg';
+
+// Quick facts are pulled from the résumé and old site. Edit freely.
+const facts = [
+  { emoji: '🚀', text: 'Founder of Postpone since 2020' },
+  { emoji: '🧀', text: 'Lives in the Madison, Wisconsin area' },
+  { emoji: '🐍', text: 'Python & Django person since 2015' },
+  { emoji: '🎹', text: 'Longtime piano player and music lover' },
+  { emoji: '🍳', text: 'Loves to cook, and makes dinner every night' },
+  { emoji: '👥', text: 'Once led a 45-person engineering org' },
+];
+---
+
+<Base>
+  <section class="container hero">
+    <div class="hero__text">
+      <p class="eyebrow">About</p>
+      <h1>
+        Hi, I’m <span class="squiggle">Grant</span>.
+        <span class="wave" aria-hidden="true">👋</span>
+      </h1>
+      <p class="lead">
+        I’m a software engineer and the founder of
+        <a href="https://www.postpone.app">Postpone</a>, a social media marketing tool for creators,
+        agencies, and brands.
+      </p>
+      <p class="lead">
+        I live in the Madison, Wisconsin area with my wife,
+        <a href="https://www.instagram.com/erica.mcconnaughey/">Erica</a>, and our two daughters.
+      </p>
+      <div class="button-row">
+        <a class="button button--primary" href="/work/">See my work <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="button" href="https://www.linkedin.com/in/grant-mcconnaughey/">Say hi on LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero__photo">
+      <div class="photo-frame">
+        <Image
+          src={avatar}
+          alt="Grant McConnaughey smiling, wearing a black sweater"
+          width={520}
+          height={520}
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+      <span class="sticker" aria-hidden="true">📍 Madison, WI</span>
+    </div>
+  </section>
+
+  <section class="container section about">
+    <div class="about__story">
+      <p class="eyebrow">The longer version</p>
+      <h2>I like building things people actually use.</h2>
+      <p>
+        I started programming professionally in January 2013 at Missouri Southern State University, where I
+        rewrote the online admissions application and later redesigned <a href="https://www.mssu.edu">mssu.edu</a>.
+        From there I fell hard for Python and Django, building insurance software at SideCars and then BriteCore.
+      </p>
+      <p>
+        At BriteCore I grew from engineer to Director of Engineering, hiring teams,
+        architecting products like BriteLines and BriteQuote, and eventually leading a division of 45 engineers.
+        After that I joined Zapier’s Identity team, where I worked on systems that handle billions of records a month.
+      </p>
+      <p>
+        In 2020 I started <a href="https://www.postpone.app">Postpone</a> as a side project, and in 2022 I left
+        Zapier to go all-in on it. These days it’s where all my energy goes: product, design, frontend, backend, and
+        customer support.
+      </p>
+      <p>
+        Outside of work I read a lot, have opinions about movies, and once wrote about my favorite albums for
+        programming.
+      </p>
+    </div>
+
+    <aside class="facts card" aria-label="Quick facts">
+      <h3>Quick facts</h3>
+      <ul>
+        {
+          facts.map((f) => (
+            <li>
+              <span class="facts__emoji" aria-hidden="true">{f.emoji}</span>
+              <span>{f.text}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 52rem) {
+    .hero {
+      grid-template-columns: 1.35fr 1fr;
+      gap: 4rem;
+    }
+  }
+  .hero h1 {
+    margin-bottom: 1.5rem;
+  }
+  .hero .lead {
+    max-width: 34rem;
+  }
+
+  .hero__photo {
+    position: relative;
+    justify-self: center;
+    width: min(100%, 22rem);
+    margin: 0.75rem 0.75rem 1.5rem 0;
+  }
+  .photo-frame {
+    position: relative;
+    transform: rotate(2.5deg);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+    background: var(--accent);
+    transform: translate(14px, 14px) rotate(-5deg);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .photo-frame :global(img) {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    border: 3px solid var(--ink);
+  }
+  .hero__photo:hover .photo-frame {
+    transform: rotate(0deg);
+  }
+  .hero__photo:hover .photo-frame::before {
+    transform: translate(10px, 10px) rotate(0deg);
+  }
+  .sticker {
+    position: absolute;
+    left: -0.75rem;
+    bottom: -0.5rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: var(--highlight);
+    border: 2px solid var(--ink);
+    font-weight: 650;
+    font-size: 0.9rem;
+    transform: rotate(-7deg);
+    box-shadow: 3px 3px 0 var(--ink);
+  }
+
+  .about {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  @media (min-width: 52rem) {
+    .about {
+      grid-template-columns: 1.6fr 1fr;
+      gap: 4rem;
+    }
+    .facts {
+      position: sticky;
+      top: 6rem;
+    }
+  }
+  .about__story {
+    max-width: var(--prose);
+  }
+  .facts {
+    background: var(--surface);
+  }
+  .facts h3 {
+    margin-bottom: 1rem;
+  }
+  .facts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.85rem;
+  }
+  .facts li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    line-height: 1.45;
+  }
+  .facts__emoji {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    font-size: 1rem;
+  }
+</style>

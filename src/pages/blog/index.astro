@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getSortedPosts, postPath, formatDate } from '../../lib/posts';
+
+const posts = await getSortedPosts();
+const byYear = Map.groupBy(posts, (p) => p.data.date.getUTCFullYear());
+---
+
+<Base title="Writing" description="Posts by Grant McConnaughey on Django, side projects, management, and the occasional movie list.">
+  <div class="container narrow">
+    <p class="eyebrow">Writing</p>
+    <h1>From the archives</h1>
+    <p class="lead">
+      Posts from 2015–2020 about Django, side projects, management, and the occasional movie list.
+      Some of it has aged better than the rest. 🙂
+    </p>
+
+    {
+      [...byYear].map(([year, yearPosts]) => (
+        <section class="year">
+          <h2 class="year__label">{year}</h2>
+          <ul class="posts">
+            {yearPosts.map((post) => (
+              <li>
+                <a href={postPath(post)}>
+                  <span class="posts__title">{post.data.title}</span>
+                  <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>
+
+<style>
+  .year {
+    margin-top: 3rem;
+  }
+  .year__label {
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: var(--accent-ink);
+    margin-bottom: 0.5rem;
+  }
+  .posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .posts a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 1.5rem;
+    padding: 0.9rem 0.75rem;
+    margin-inline: -0.75rem;
+    border-radius: 10px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .posts a:hover {
+    background: var(--accent-tint);
+  }
+  .posts li + li {
+    border-top: 1px solid var(--line);
+  }
+  .posts__title {
+    font-weight: 600;
+  }
+  .posts a:hover .posts__title {
+    color: var(--accent-ink);
+  }
+  .posts time {
+    flex: none;
+    font-size: 0.875rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+</style>

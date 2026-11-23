@@ -1,0 +1,723 @@
+{
+  "influential": [
+    {
+      "title": "Code Complete",
+      "author": "Steve McConnell",
+      "image": "code-complete.jpg"
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "image": "how-to-win-friends-and-influence-people.jpg"
+    },
+    {
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "image": "clean-code.jpg"
+    },
+    {
+      "title": "Rework",
+      "author": "Jason Fried, David Heinemeier Hansson",
+      "image": "rework.jpg"
+    },
+    {
+      "title": "Don't Make Me Think",
+      "author": "Steve Krug",
+      "image": "dont-make-me-think.jpg"
+    },
+    {
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "image": "the-power-of-habit.jpg"
+    },
+    {
+      "title": "Harry Potter",
+      "author": "J.K. Rowling",
+      "image": "harry-potter.jpg"
+    },
+    {
+      "title": "I Will Teach You to be Rich",
+      "author": "Ramit Sethi",
+      "image": "i-will-teach-you-to-be-rich.jpg"
+    }
+  ],
+  "years": [
+    {
+      "year": 2021,
+      "books": [
+        {
+          "title": "The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you",
+          "author": "Rob Fitzpatrick"
+        },
+        {
+          "title": "Harry Potter and the Half-Blood Prince",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "AWS Certified Solutions Architect Associate All-In-One Exam Guide, 2nd Edition",
+          "author": "Joyjeet Banerjee"
+        },
+        {
+          "title": "Dark Matter",
+          "author": "Blake Crouch"
+        },
+        {
+          "title": "Talking to Strangers: What We Should Know About the People We Don't Know",
+          "author": "Malcolm Gladwell"
+        },
+        {
+          "title": "Press Reset: Ruin and Recovery in the Video Game Industry",
+          "author": "Jason Schreier"
+        },
+        {
+          "title": "Harry Potter and the Order of the Phoenix",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Notes on a Nervous Planet",
+          "author": "Matt Haig"
+        },
+        {
+          "title": "Refactoring UI",
+          "author": "Adam Wathan"
+        },
+        {
+          "title": "Harry Poter and the Goblet of Fire",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Meditation for Fidgety Skeptics",
+          "author": "Dan Harris"
+        },
+        {
+          "title": "Traction",
+          "author": "Gabriel Weinberg"
+        },
+        {
+          "title": "Architectural Patterns with Python",
+          "author": "Harry Percival"
+        },
+        {
+          "title": "Harry Poter and the Prisoner of Azkaban",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Harry Poter and the Chamber of Secrets",
+          "author": "J.K. Rowling"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "books": [
+        {
+          "title": "Harry Poter and the Sorceror's Stone",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "The Phoenix Project",
+          "author": "Gene Kim"
+        },
+        {
+          "title": "To Sell Is Human",
+          "author": "Daniel Pink"
+        },
+        {
+          "title": "Fluent Python",
+          "author": "Luciano Ramalho"
+        },
+        {
+          "title": "Writing Without Bullshit",
+          "author": "Joshua Bernoff"
+        },
+        {
+          "title": "White Fragility: Why It's So Hard for White People to Talk About Racism",
+          "author": "Robin DiAngelo"
+        },
+        {
+          "title": "Drive: The Surprising Truth About What Motivates Us",
+          "author": "Daniel Pink"
+        },
+        {
+          "title": "The Drawing of the Three (Dark Tower #2)",
+          "author": "Stephen King"
+        },
+        {
+          "title": "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity",
+          "author": "Kim Scott"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "books": [
+        {
+          "title": "The Ocean at the End of the Lane",
+          "author": "Neil Gaiman"
+        },
+        {
+          "title": "Watchmen",
+          "author": "Alan Moore"
+        },
+        {
+          "title": "The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph",
+          "author": "Ryan Holiday"
+        },
+        {
+          "title": "Grokking Algorithms",
+          "author": "Aditya Y. Bhargava"
+        },
+        {
+          "title": "Recursion",
+          "author": "Black Crouch"
+        },
+        {
+          "title": "Measure What Matters",
+          "author": "John Doerr"
+        },
+        {
+          "title": "The Given Day",
+          "author": "Dennis Lehane"
+        },
+        {
+          "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+          "author": "James Clear"
+        },
+        {
+          "title": "Make Today Count: The Secret of Your Success Is Determined by Your Daily Agenda",
+          "author": "John C. Maxwell"
+        },
+        {
+          "title": "The Woman in the Window",
+          "author": "A.J. Finn"
+        },
+        {
+          "title": "Neverwhere",
+          "author": "Neil Gaiman"
+        },
+        {
+          "title": "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change",
+          "author": "Camille Fournier"
+        },
+        {
+          "title": "The Subtle Knife (His Dark Materials #2)",
+          "author": "Philip Pullman"
+        },
+        {
+          "title": "Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration",
+          "author": "Ed Catmull and Amy Wallace"
+        },
+        {
+          "title": "Creative Selection: Inside Apple's Design Process During the Golden Age of Steve Jobs",
+          "author": "Ken Kocienda"
+        },
+        {
+          "title": "The Gunslinger (The Dark Tower #1)",
+          "author": "Stephen King"
+        },
+        {
+          "title": "How To Not Always Be Working",
+          "author": "Marlee Grace"
+        },
+        {
+          "title": "Comedy Sex God",
+          "author": "Pete Holmes"
+        },
+        {
+          "title": "The Last Olympian (Percy Jackson and the Olympians, #5)",
+          "author": "Rick Riordan"
+        },
+        {
+          "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+          "author": "Mark Manson"
+        },
+        {
+          "title": "The Battle of the Labyrinth (Percy Jackson and the Olympians, #4)",
+          "author": "Rick Riordan"
+        },
+        {
+          "title": "The Titan's Curse (Percy Jackson and the Olympians, #3)",
+          "author": "Rick Riordan"
+        },
+        {
+          "title": "On Writing: A Memoir of the Craft",
+          "author": "Stephen King"
+        },
+        {
+          "title": "The Sea of Monsters (Percy Jackson and the Olympians, #2)",
+          "author": "Rick Riordan"
+        },
+        {
+          "title": "High Output Management",
+          "author": "Andy Grove"
+        },
+        {
+          "title": "The Golden Compass (His Dark Materials #1)",
+          "author": "Philip Pullman"
+        },
+        {
+          "title": "The Lightning Thief (Percy Jackson and the Olympians, #1)",
+          "author": "Rick Riordan"
+        },
+        {
+          "title": "Blood, Sweat, and Pixels: The Triumphant, Turbulent Stories Behind How Video Games Are Made",
+          "author": "Jason Schreier"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "books": [
+        {
+          "title": "Becoming Steve Jobs: The Evolution of a Reckless Upstart into a Visionary Leader",
+          "author": "Brent Schlender"
+        },
+        {
+          "title": "Based on a True Story",
+          "author": "Norm Macdonald"
+        },
+        {
+          "title": "It Doesn't Have to Be Crazy at Work",
+          "author": "Jason Fried, David Heinemeier Hansson"
+        },
+        {
+          "title": "Clean Architecture",
+          "author": "Robert C. Martin"
+        },
+        {
+          "title": "The Bogleheads' Guide to Investing",
+          "author": "Taylor Larimore"
+        },
+        {
+          "title": "Annihilation",
+          "author": "James VanderMeer"
+        },
+        {
+          "title": "Sharp Objects",
+          "author": "Gillian Flynn"
+        },
+        {
+          "title": "Since We Fell",
+          "author": "Dennis Lehane"
+        },
+        {
+          "title": "Smarter Faster Better: The Secrets of Being Productive in Life and Business",
+          "author": "Charles Duhigg"
+        },
+        {
+          "title": "World Gone By",
+          "author": "Dennis Lehane"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "books": [
+        {
+          "title": "You Don't Know JS: Types & Grammar",
+          "author": "Kyle Simpson"
+        },
+        {
+          "title": "Deep Work: Rules for Focused Success in a Distracted World",
+          "author": "Cal Newport"
+        },
+        {
+          "title": "Building Microservices: Designing Fine-Grained Systems",
+          "author": "Sam Newman"
+        },
+        {
+          "title": "Two Scoops of Django 1.11: Best Practices for the Django Web Framework",
+          "author": "Daniel and Audrey Roy Greenfeld"
+        },
+        {
+          "title": "How Successful People Grow: 15 Ways to Get Ahead in Life",
+          "author": "John C. Maxwell"
+        },
+        {
+          "title": "High Performance Django",
+          "author": "Peter Baumgartner"
+        },
+        {
+          "title": "You Don't Know JS: this & Object Prototypes",
+          "author": "Kyle Simpson"
+        },
+        {
+          "title": "Peopleware: Productive Projects and Teams",
+          "author": "Timothy Lister and Tom DeMarco"
+        },
+        {
+          "title": "Refactoring: Improving the Design of Existing Code",
+          "author": "Martin Fowler"
+        },
+        {
+          "title": "You Don't Know JS: Scope and Closures",
+          "author": "Kyle Simpson"
+        },
+        {
+          "title": "You Don't Know JS: Up & Going",
+          "author": "Kyle Simpson"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "books": [
+        {
+          "title": "Nonviolent Communication",
+          "author": "Marshall B. Rosenberg"
+        },
+        {
+          "title": "The Righteous Mind: Why Good People are Divided by Politics and Religion",
+          "author": "Jonathan Haidt"
+        },
+        {
+          "title": "The Power of Habit",
+          "author": "Charles Duhigg"
+        },
+        {
+          "title": "Soft Skills",
+          "author": "John Sonmez"
+        },
+        {
+          "title": "Live by Night",
+          "author": "Dennis Lehane"
+        },
+        {
+          "title": "How Successful People Lead",
+          "author": "John C. Maxwell"
+        },
+        {
+          "title": "Speaking JavaScript",
+          "author": "Axel Rauschmayer"
+        },
+        {
+          "title": "Dark Places",
+          "author": "Gillian Flynn"
+        },
+        {
+          "title": "Essential SQLAlchemy",
+          "author": "Jason Myers and Rick Copeland"
+        },
+        {
+          "title": "Flask Web Development",
+          "author": "Miguel Grinberg"
+        },
+        {
+          "title": "The Personal MBA",
+          "author": "Josh Kaufman"
+        },
+        {
+          "title": "Getting Ready for Marriage",
+          "author": "Jim Burns and Doug Fields"
+        },
+        {
+          "title": "Getting Things Done",
+          "author": "David Allen"
+        },
+        {
+          "title": "JavaScript and jQuery",
+          "author": "Jon Duckett"
+        },
+        {
+          "title": "The Millionaire Next Door",
+          "author": "Thomas J. Stanley and William D. Danko"
+        },
+        {
+          "title": "Get a Financial Life",
+          "author": "Beth Kobliner"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "books": [
+        {
+          "title": "101 Secrets for Your Twenties",
+          "author": "Paul Angone"
+        },
+        {
+          "title": "Adulting: How to Become a Grown-up in 468 Easy(ish) Steps",
+          "author": "Kelly Williams Brown"
+        },
+        {
+          "title": "Holes",
+          "author": "Louis Sachar"
+        },
+        {
+          "title": "I Will Teach You To Be Rich",
+          "author": "Ramit Sethi"
+        },
+        {
+          "title": "Fluent Python",
+          "author": "Luciano Ramalho"
+        },
+        {
+          "title": "Harry Potter and the Deathly Hallows",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Harry Potter and the Half-Blood Prince",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Harry Potter and the Order of the Pheonix",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Remote",
+          "author": "David Heinemeier Hansson and Jason Fried"
+        },
+        {
+          "title": "Usable Usability",
+          "author": "Eric Reiss"
+        },
+        {
+          "title": "Harry Potter and the Goblet of Fire",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Why Didn't They Teach Me This in School?: 99 Personal Money Management Principles to Live By",
+          "author": "Cary Siegel"
+        },
+        {
+          "title": "Effective Python: 59 Specific Ways to Write Better Python",
+          "author": "Brett Slatkin"
+        },
+        {
+          "title": "The Martian",
+          "author": "Andy Weir"
+        },
+        {
+          "title": "Two Scoops of Django: Best Practices for Django 1.8",
+          "author": "Daniel Roy Greenfeld and Audrey Roy Greenfeld"
+        },
+        {
+          "title": "97 Things Every Programmer Should Know",
+          "author": "Kevlin Henney"
+        },
+        {
+          "title": "Scrum",
+          "author": "Jeff Sutherland"
+        },
+        {
+          "title": "Test-Driven Development with Python",
+          "author": "Harry Percival"
+        },
+        {
+          "title": "Start Small, Stay Small",
+          "author": "Rob Walling"
+        },
+        {
+          "title": "Harry Potter and the Prisoner of Azkaban",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Rework",
+          "author": "Jason Fried and David Heinemeier Hansson"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "books": [
+        {
+          "title": "Two Scoops of Django: Best Practices for Django 1.6",
+          "author": "Daniel Greenfeld and Audrey Roy"
+        },
+        {
+          "title": "Harry Potter and the Chamber of Secrets",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "Illustrated C# 2012",
+          "author": "Daniel Solis"
+        },
+        {
+          "title": "Harry Poter and the Sorceror's Stone",
+          "author": "J.K. Rowling"
+        },
+        {
+          "title": "The Quick Python Book",
+          "author": "Naomi R. Ceder"
+        },
+        {
+          "title": "Accounting Made Simple",
+          "author": "Mike Piper"
+        },
+        {
+          "title": "Gone Girl",
+          "author": "Gillian Flynn"
+        },
+        {
+          "title": "Head First Python",
+          "author": "Paul Barry"
+        },
+        {
+          "title": "Bioshock: Rapture",
+          "author": "John Shirley"
+        },
+        {
+          "title": "Grails in Action, Second Edition",
+          "author": "Glen Smith and Peter Ledbrook"
+        },
+        {
+          "title": "The Non-Designer's Design Book, Third Edition",
+          "author": "Robin Williams"
+        },
+        {
+          "title": "Creative, Inc.",
+          "author": "Meg Mateo Ilasco and Joy Deangdeelert Cho"
+        },
+        {
+          "title": "JavaScript: The Good Parts",
+          "author": "Douglas Crockford"
+        },
+        {
+          "title": "Brain Rules",
+          "author": "John Medina"
+        },
+        {
+          "title": "How Successful People Think",
+          "author": "John C. Maxwell"
+        },
+        {
+          "title": "A Software Engineer Learns HTML5, JavaScript and jQuery",
+          "author": "Dane Cameron"
+        },
+        {
+          "title": "Pragmatic Unit Testing",
+          "author": "Andy Hunt"
+        },
+        {
+          "title": "Groovy in Action, Second Edition",
+          "author": "Dierk König, et al."
+        },
+        {
+          "title": "Introducing Regular Expressions",
+          "author": "Michael James Fitzgerald"
+        },
+        {
+          "title": "Sam's Teach Yourself SQL in 24 Hours",
+          "author": "Ryan Stephens, Ron Plew, and Arie D. Jones"
+        },
+        {
+          "title": "Groovy 2 Cookbook",
+          "author": "Andrey Adamovich and Luciano Fiandesio"
+        },
+        {
+          "title": "Sam's Teach Yourself SQL in 10 Minutes",
+          "author": "Ben Forta"
+        },
+        {
+          "title": "The Passionate Programmer",
+          "author": "Chad Fowler"
+        },
+        {
+          "title": "Head First Design Patterns",
+          "author": "Eric Freeman, Bert Bates, Kathy Sierra and Elisabeth Robson"
+        },
+        {
+          "title": "Don't Make Me Think, Revisited",
+          "author": "Steve Krug"
+        },
+        {
+          "title": "How to Win Friends and Influence People",
+          "author": "Dale Carnegie"
+        },
+        {
+          "title": "The Design of Everyday Things, Revisited",
+          "author": "Don Norman"
+        },
+        {
+          "title": "The 5 Elements of Effective Thinking",
+          "author": "Edward B. Burger and Michael Starbird"
+        },
+        {
+          "title": "Designing Interfaces",
+          "author": "Jenifer Tidwell"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "books": [
+        {
+          "title": "Spring Security 3.1",
+          "author": "Robert Winch and Peter Mularien"
+        },
+        {
+          "title": "Pro Spring Security",
+          "author": "Carlo Scarioni"
+        },
+        {
+          "title": "Learning SQL",
+          "author": "Alan Beaulieu"
+        },
+        {
+          "title": "Web Form Design",
+          "author": "Luke Wroblewski"
+        },
+        {
+          "title": "Making Java Groovy",
+          "author": "Ken Kousen"
+        },
+        {
+          "title": "Head First Mobile Web",
+          "author": "Jason Grigsby"
+        },
+        {
+          "title": "Code Complete, Second Edition",
+          "author": "Steve McConnell"
+        },
+        {
+          "title": "HTML & CSS: Design and Build Websites",
+          "author": "Jon Duckett"
+        },
+        {
+          "title": "Don't Make Me Think, Second Edition",
+          "author": "Steve Krug"
+        },
+        {
+          "title": "The Clean Coder",
+          "author": "Robert C. Martin"
+        },
+        {
+          "title": "Programming Groovy 2",
+          "author": "Venkat Subramaniam"
+        },
+        {
+          "title": "Programming Grails",
+          "author": "Burt Beckwith"
+        },
+        {
+          "title": "Beginning Groovy, Grails, and Griffon",
+          "author": "Vishal Layka, Christopher M Judd, Joseph Faisal Nusairat and Jim Shingler"
+        },
+        {
+          "title": "Programming Groovy",
+          "author": "Venkat Subramaniam"
+        },
+        {
+          "title": "Clean Code",
+          "author": "Robert C. Martin"
+        },
+        {
+          "title": "Pro Git",
+          "author": "Scott Chacon"
+        },
+        {
+          "title": "The Definitive Guide to Grails 2",
+          "author": "Jeff Scott Brown and Graeme Rocher"
+        },
+        {
+          "title": "Getting Started with Grails, Second Edition",
+          "author": "Scott Davis and Jason Rudolph"
+        },
+        {
+          "title": "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics",
+          "author": "Jennifer Niederst Robbins"
+        }
+      ]
+    }
+  ]
+}
